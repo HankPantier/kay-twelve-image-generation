@@ -1,0 +1,97 @@
+<h2>The three Kay-Twelve shot archetypes</h2>
+<p class="subtitle">Each archetype maps to a named set of Nano Banana defaults. When Claude Code receives a brief, it identifies the archetype and applies these settings automatically.</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="space" onclick="toggleSelect(this)" style="cursor:default;">
+    <div class="card-body">
+      <h3>The Space</h3>
+      <p style="color:#888;font-size:13px;margin-bottom:12px;">Wide establishing shot. Shows the full learning environment — architecture, furniture layout, natural light. Students may be present but are secondary to the space itself. Used for: project reveals, website hero, LinkedIn articles, newsletter headers.</p>
+
+      <span class="label">Camera defaults</span>
+      <div style="font-size:12px;color:#ccc;margin-top:6px;line-height:2;">
+        <code>camera_model: "Canon EOS R5"</code><br>
+        <code>lens: "24mm"</code><br>
+        <code>aperture: "f/5.6"</code><br>
+        <code>iso: "800"</code><br>
+        <code>framing: "wide_shot"</code><br>
+        <code>angle: "eye_level"</code><br>
+        <code>focus_point: "whole_scene"</code><br>
+        <code>lighting.type: "natural_sunlight"</code><br>
+        <code>film_stock: "Kodak Portra 400"</code>
+      </div>
+
+      <span class="label" style="margin-top:12px;display:block;">Composition rules</span>
+      <ul style="font-size:12px;color:#ccc;margin-top:6px;padding-left:16px;line-height:1.8;">
+        <li>Shoot from corner or doorway — show sightlines</li>
+        <li>No clutter in foreground</li>
+        <li>Center-weighted — subject centered for multi-ratio crop</li>
+        <li>Natural light source visible or implied</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" data-choice="moment" onclick="toggleSelect(this)" style="cursor:default;">
+    <div class="card-body">
+      <h3>The Moment</h3>
+      <p style="color:#888;font-size:13px;margin-bottom:12px;">Close action shot. One student engaged with the space — reading, writing, thinking, interacting with a piece of furniture in a creative or unexpected way. Authentic, not posed. Used for: Instagram primary feed, storytelling posts, blog in-article images.</p>
+
+      <span class="label">Camera defaults</span>
+      <div style="font-size:12px;color:#ccc;margin-top:6px;line-height:2;">
+        <code>camera_model: "Nikon Z 8"</code><br>
+        <code>lens: "85mm"</code><br>
+        <code>aperture: "f/1.4"</code><br>
+        <code>iso: "400"</code><br>
+        <code>framing: "medium_shot"</code><br>
+        <code>angle: "eye_level"</code><br>
+        <code>focus_point: "face"</code><br>
+        <code>lighting.type: "natural_sunlight"</code><br>
+        <code>film_stock: "Kodak Portra 400"</code>
+      </div>
+
+      <span class="label" style="margin-top:12px;display:block;">Composition rules</span>
+      <ul style="font-size:12px;color:#ccc;margin-top:6px;padding-left:16px;line-height:1.8;">
+        <li>Subject centered, generous head room</li>
+        <li>Background softly blurred (bokeh) — space visible but not distracting</li>
+        <li>Expression: engaged, natural — never posed/smiling at camera</li>
+        <li>At least one piece of furniture/environment visible</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card" data-choice="collab" onclick="toggleSelect(this)" style="cursor:default;">
+    <div class="card-body">
+      <h3>The Collaboration</h3>
+      <p style="color:#888;font-size:13px;margin-bottom:12px;">Group shot showing students working together — discussion, problem-solving, hands-on activity. Captures energy and purpose. Space is equally important as students. Used for: LinkedIn feed, Facebook, newsletter, blog headers.</p>
+
+      <span class="label">Camera defaults</span>
+      <div style="font-size:12px;color:#ccc;margin-top:6px;line-height:2;">
+        <code>camera_model: "Nikon Z 8"</code><br>
+        <code>lens: "50mm"</code><br>
+        <code>aperture: "f/2.8"</code><br>
+        <code>iso: "400"</code><br>
+        <code>framing: "full_body"</code><br>
+        <code>angle: "eye_level"</code><br>
+        <code>focus_point: "whole_scene"</code><br>
+        <code>lighting.type: "natural_sunlight"</code><br>
+        <code>film_stock: "Kodak Portra 400"</code>
+      </div>
+
+      <span class="label" style="margin-top:12px;display:block;">Composition rules</span>
+      <ul style="font-size:12px;color:#ccc;margin-top:6px;padding-left:16px;line-height:1.8;">
+        <li>2–4 students max — avoid crowd feel</li>
+        <li>Students facing each other, not camera</li>
+        <li>Activity visible — something in their hands or on the surface</li>
+        <li>Space tells the story equally — furniture, materials, layout visible</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-top:20px;padding:14px;background:#1a1a2e;border:1px solid #333;border-radius:8px;">
+  <span class="label">Universal negative prompts (all archetypes)</span>
+  <p style="font-size:12px;color:#ccc;margin-top:8px;line-height:1.8;">
+    <code>"clutter"</code> · <code>"storage overflowing"</code> · <code>"tape on floor"</code> · <code>"water bottles"</code> · <code>"trash can"</code> · <code>"fan"</code> · <code>"posed smile at camera"</code> · <code>"low quality"</code> · <code>"grainy"</code> · <code>"blur"</code> · <code>"watermark"</code> · <code>"text"</code> · <code>"bad hands"</code> · <code>"extra fingers"</code> · <code>"flash photography"</code> · <code>"harsh lighting"</code> · <code>"catalog style"</code> · <code>"sterile"</code>
+  </p>
+</div>

@@ -1,0 +1,66 @@
+<h2>What the camera data tells us</h2>
+<p class="subtitle">EXIF analysis from the 5 "approved" example photos — 3 had stripped metadata, 2 had full data. Here's what we learned.</p>
+
+<div class="section">
+  <span class="label">Camera Equipment</span>
+  <div class="cards" style="margin-top:12px;">
+    <div class="card" style="cursor:default;">
+      <div class="card-body">
+        <h3>Example 2 — Canon EOS 5D Mark II</h3>
+        <p>17–40mm f/4L lens · shot at <strong>27mm</strong> · f/4.0 · 1/100s · ISO 1600</p>
+        <p style="margin-top:8px;color:#888;font-size:13px;">Wide environmental shot. High ISO confirms indoor ambient light — no flash. The wide angle captures the full space while keeping context.</p>
+      </div>
+    </div>
+    <div class="card" style="cursor:default;">
+      <div class="card-body">
+        <h3>Examples 4 &amp; 5 — Nikon Z 8</h3>
+        <p>Ex 4: <strong>85mm f/1.2 S</strong> · f/1.2 · 1/320s · ISO 400<br>Ex 5: <strong>50mm f/1.2 S</strong> · f/1.2 · 1/160s · ISO 400</p>
+        <p style="margin-top:8px;color:#888;font-size:13px;">Same shoot, same day. Fast primes at wide-open aperture = creamy bokeh behind students. Low ISO = clean, sharp, professional output.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="label">The Pattern — Two Distinct Shot Types</span>
+  <div class="split" style="margin-top:12px;">
+    <div class="mockup">
+      <div class="mockup-header">Environmental / Wide Shots</div>
+      <div class="mockup-body">
+        <p><strong>Lens range:</strong> 17–35mm</p>
+        <p><strong>Aperture:</strong> f/4–f/8 (everything sharp)</p>
+        <p><strong>ISO:</strong> Higher (800–3200) — ambient light</p>
+        <p><strong>No flash</strong> — preserves natural lighting mood</p>
+        <p style="margin-top:10px;color:#888;font-size:13px;">Used for: establishing shots, showing full space, LinkedIn/website hero images</p>
+      </div>
+    </div>
+    <div class="mockup">
+      <div class="mockup-header">Action / Student Shots</div>
+      <div class="mockup-body">
+        <p><strong>Lens range:</strong> 50–85mm</p>
+        <p><strong>Aperture:</strong> f/1.2–f/2.8 (subject isolation)</p>
+        <p><strong>ISO:</strong> Low (200–400) — clean, sharp</p>
+        <p><strong>No flash</strong> — natural, authentic feel</p>
+        <p style="margin-top:10px;color:#888;font-size:13px;">Used for: Instagram close-ups, storytelling moments, newsletter headers</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="label">What This Means for AI Generation (Nano Banana)</span>
+  <div style="background:#1a1a2e;border:1px solid #333;border-radius:8px;padding:16px;font-size:13px;line-height:1.7;">
+    <p>These camera fingerprints give us <strong>exact Nano Banana technical defaults</strong> for each image type:</p>
+    <ul style="margin-top:8px;padding-left:20px;color:#ccc;">
+      <li>camera_model: <code>Canon EOS R5</code> or <code>Nikon Z 8</code> (modern equivalents)</li>
+      <li>Environmental: <code>lens: "24mm"</code>, <code>aperture: "f/5.6"</code>, <code>iso: "800"</code></li>
+      <li>Action/Student: <code>lens: "85mm"</code>, <code>aperture: "f/1.4"</code>, <code>iso: "400"</code></li>
+      <li>film_stock: <code>Kodak Portra 400</code> — warm, flattering skin tones</li>
+      <li>lighting.type: <code>natural_sunlight</code> — no flash, ever</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section" style="margin-top:24px;">
+  <p style="color:#aaa;font-size:14px;">All 5 photos were post-processed in <strong>Adobe Lightroom Classic</strong>. The style guide should note that AI-generated images should mimic this look — warm, clean, color-graded, not straight-out-of-camera raw.</p>
+</div>

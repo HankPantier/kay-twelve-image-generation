@@ -1,0 +1,74 @@
+<h2>Social card design — 3 approaches</h2>
+<p class="subtitle">Each keeps Nano Banana for photo generation. The difference is how the branded card layer gets composed.</p>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Pencil MCP — fully automated</h3>
+      <p>Nano Banana generates the photo. Pencil composes the social card (brand colors, logo placement, text zone, border treatments) in a <code>.pen</code> file. Claude Code runs the whole pipeline end-to-end — one prompt, full output.</p>
+      <div class="pros-cons" style="margin-top:10px;">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Zero context switching — everything in Claude Code</li>
+          <li>Fully repeatable, version-controlled output</li>
+          <li>Scales — add new card templates without learning new tools</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Pencil is optimized for UI/web, not graphic design — social cards are at the edge of its comfort zone</li>
+          <li>Requires building card templates in Pencil's format upfront</li>
+          <li>Less visual polish control vs. Figma</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Figma templates — industry standard</h3>
+      <p>Build master social card templates in Figma once (with defined photo zones, logo, text areas, brand colors). Nano Banana photo drops into the template — manually or via Figma API. Figma exports at correct dimensions.</p>
+      <div class="pros-cons" style="margin-top:10px;">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Industry gold standard for social card design systems</li>
+          <li>High visual polish, pixel-perfect control</li>
+          <li>Team members can update text/photos without a designer</li>
+          <li>Figma has native social template infrastructure</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Context switch out of Claude Code for card composition</li>
+          <li>Requires someone comfortable in Figma to set up templates</li>
+          <li>Not fully automated — manual photo swap step</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Hybrid — Figma templates + Pencil for generation</h3>
+      <p>Design the master card templates in Figma (one-time setup, full design control). Claude Code + Pencil reads those templates and generates card variants programmatically — dropping in the Nano Banana photo, swapping text, exporting per platform.</p>
+      <div class="pros-cons" style="margin-top:10px;">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Best of both: Figma's design quality + Pencil's automation</li>
+          <li>Template changes happen in Figma (visual, accessible to team)</li>
+          <li>Card generation stays in Claude Code workflow</li>
+          <li>Most scalable long-term</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Most setup work upfront (two tools to configure)</li>
+          <li>Pencil → Figma integration needs to be wired up</li>
+          <li>Slightly more complex workflow to document</li>
+        </ul></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-top:20px;padding:14px;background:#1a2a1a;border:1px solid #2a4a2a;border-radius:8px;">
+  <p style="color:#88a95b;font-size:13px;font-weight:600;margin-bottom:6px;">My recommendation → C (Hybrid)</p>
+  <p style="font-size:13px;color:#ccc;">Design the card templates in Figma where a human can see and control the visual output. Then let Pencil + Claude Code handle the repetitive work of generating card variants for each platform and post. This keeps design quality high without requiring a designer every time a new post goes out.</p>
+  <p style="font-size:13px;color:#aaa;margin-top:8px;">That said — if the goal is to minimize tools and keep everything inside Claude Code, Option A is perfectly viable. Pencil can produce clean, consistent social cards once the templates are defined.</p>
+</div>

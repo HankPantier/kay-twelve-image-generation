@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kay-Twelve Visual Content System — Overview</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
+    font-size: 10.5pt;
+    color: #1a1a1a;
+    background: #fff;
+    line-height: 1.6;
+  }
+
+  /* Cover page */
+  .cover {
+    page-break-after: always;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .cover-top {
+    background: #208ca9;
+    padding: 48pt 48pt 36pt;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .cover-eyebrow {
+    font-size: 8pt;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 16pt;
+  }
+
+  .cover-title {
+    font-size: 32pt;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 12pt;
+  }
+
+  .cover-subtitle {
+    font-size: 13pt;
+    font-weight: 300;
+    color: rgba(255,255,255,0.85);
+    max-width: 400pt;
+    line-height: 1.5;
+  }
+
+  .cover-bottom {
+    background: #fff;
+    padding: 28pt 48pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3pt solid #ffb41f;
+  }
+
+  .cover-meta {
+    font-size: 8.5pt;
+    color: #888;
+  }
+
+  .cover-meta strong {
+    color: #333;
+    display: block;
+    font-size: 9pt;
+    margin-bottom: 2pt;
+  }
+
+  /* Content pages */
+  .page {
+    page-break-after: always;
+    padding: 48pt;
+    min-height: 100vh;
+  }
+
+  .page:last-child {
+    page-break-after: auto;
+  }
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16pt;
+    border-bottom: 1.5pt solid #208ca9;
+    margin-bottom: 28pt;
+  }
+
+  .page-header-title {
+    font-size: 18pt;
+    font-weight: 700;
+    color: #208ca9;
+  }
+
+  .page-header-logo {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #9e9ca4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8pt;
+    margin-top: 22pt;
+  }
+
+  h2:first-child { margin-top: 0; }
+
+  h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #208ca9;
+    margin-bottom: 5pt;
+    margin-top: 14pt;
+  }
+
+  p { margin-bottom: 8pt; }
+
+  ul { padding-left: 16pt; margin-bottom: 8pt; }
+  ul li { margin-bottom: 3pt; }
+
+  /* Section label */
+  .label {
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #9e9ca4;
+    display: block;
+    margin-bottom: 10pt;
+  }
+
+  /* Highlight box */
+  .highlight {
+    background: #f0f8fb;
+    border-left: 3pt solid #208ca9;
+    padding: 12pt 14pt;
+    margin: 14pt 0;
+    border-radius: 0 4pt 4pt 0;
+  }
+
+  .highlight p { margin-bottom: 4pt; }
+  .highlight p:last-child { margin-bottom: 0; }
+
+  /* Yellow highlight */
+  .highlight-yellow {
+    background: #fffbf0;
+    border-left: 3pt solid #ffb41f;
+    padding: 12pt 14pt;
+    margin: 14pt 0;
+    border-radius: 0 4pt 4pt 0;
+  }
+
+  /* Cards grid */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12pt;
+    margin: 14pt 0;
+  }
+
+  .card {
+    border: 1pt solid #e0e0e0;
+    border-radius: 6pt;
+    padding: 14pt;
+    position: relative;
+  }
+
+  .card-accent {
+    height: 3pt;
+    border-radius: 3pt 3pt 0 0;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+  }
+
+  .card h3 {
+    margin-top: 8pt;
+    font-size: 10pt;
+  }
+
+  .card p { font-size: 9pt; color: #555; }
+  .card ul { font-size: 9pt; color: #555; }
+
+  /* Platform grid */
+  .platform-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10pt;
+    margin: 14pt 0;
+  }
+
+  .platform-item {
+    border: 1pt solid #e0e0e0;
+    border-radius: 6pt;
+    padding: 12pt;
+  }
+
+  .platform-item h3 { margin-top: 0; }
+  .platform-item p { font-size: 9pt; color: #555; margin-bottom: 3pt; }
+
+  /* Ratio visual */
+  .ratio-row {
+    display: flex;
+    gap: 10pt;
+    align-items: flex-end;
+    margin: 14pt 0;
+    padding: 16pt;
+    background: #f7f7f7;
+    border-radius: 6pt;
+  }
+
+  .ratio-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6pt;
+  }
+
+  .ratio-visual {
+    background: #208ca9;
+    border-radius: 3pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 8pt;
+  }
+
+  .ratio-label {
+    font-size: 8pt;
+    color: #555;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  /* Workflow steps */
+  .workflow-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 14pt 0;
+  }
+
+  .workflow-step {
+    display: flex;
+    gap: 14pt;
+    align-items: flex-start;
+    padding: 12pt 0;
+    border-bottom: 1pt solid #f0f0f0;
+  }
+
+  .workflow-step:last-child { border-bottom: none; }
+
+  .step-num {
+    width: 22pt;
+    height: 22pt;
+    border-radius: 50%;
+    background: #208ca9;
+    color: white;
+    font-weight: 700;
+    font-size: 9pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1pt;
+  }
+
+  .step-content h3 {
+    margin-top: 0;
+    color: #1a1a1a;
+    font-size: 10pt;
+  }
+
+  .step-content p {
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 0;
+  }
+
+  /* Two col */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18pt;
+    margin: 14pt 0;
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    font-size: 9.5pt;
+  }
+
+  th {
+    background: #208ca9;
+    color: white;
+    padding: 7pt 10pt;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  td {
+    padding: 7pt 10pt;
+    border-bottom: 1pt solid #eee;
+  }
+
+  tr:nth-child(even) td { background: #f7fbfc; }
+
+  /* Footer */
+  .footer {
+    margin-top: 28pt;
+    padding-top: 12pt;
+    border-top: 1pt solid #e0e0e0;
+    font-size: 8pt;
+    color: #aaa;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Pill tag */
+  .tag {
+    display: inline-block;
+    background: #e8f5f8;
+    color: #208ca9;
+    font-size: 7.5pt;
+    font-weight: 600;
+    padding: 2pt 7pt;
+    border-radius: 10pt;
+    margin-right: 4pt;
+    margin-bottom: 3pt;
+  }
+
+  .tag-yellow { background: #fff8e0; color: #b07d00; }
+  .tag-green { background: #f0f5e8; color: #5a7a35; }
+  .tag-pink { background: #fdf0f5; color: #c03060; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-top">
+    <div class="cover-eyebrow">Visual Content System</div>
+    <div class="cover-title">Kay-Twelve<br>Image Generation<br>& Brand Standards</div>
+    <div class="cover-subtitle">A system for creating on-brand photography and social content — from a single brief to a full platform-ready image set.</div>
+  </div>
+  <div class="cover-bottom">
+    <div class="cover-meta">
+      <strong>Prepared for Kay-Twelve</strong>
+      April 2026
+    </div>
+    <div class="cover-meta" style="text-align:right;">
+      <strong>Confidential</strong>
+      Internal planning document
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 1: What we're building -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-title">What we're building</div>
+    <div class="page-header-logo">Kay-Twelve · Visual Content System</div>
+  </div>
+
+  <div class="highlight">
+    <p>Kay-Twelve needs a repeatable system for creating on-brand imagery across LinkedIn, Instagram, Facebook, the newsletter, and the blog. Today, getting the right photo for the right platform is inconsistent and time-consuming. This system changes that.</p>
+  </div>
+
+  <h2>The goal</h2>
+  <p>A single brief — "show two students collaborating in a modern library space for LinkedIn and Instagram" — should automatically produce all the images needed for all requested platforms, formatted correctly, branded consistently, and ready to post.</p>
+
+  <div class="two-col">
+    <div>
+      <h2>What this system covers</h2>
+      <ul>
+        <li>A defined visual style with clear good/bad examples</li>
+        <li>Three named image types (shot archetypes)</li>
+        <li>Platform-specific image formats handled automatically</li>
+        <li>AI image generation with consistent brand defaults</li>
+        <li>Branded social card composition</li>
+        <li>A workflow for adding students to real environment photos</li>
+      </ul>
+    </div>
+    <div>
+      <h2>What it replaces</h2>
+      <ul>
+        <li>One-off image requests with inconsistent output</li>
+        <li>Manual resizing for each platform</li>
+        <li>Judgment calls about what "on-brand" looks like</li>
+        <li>Separate tools for separate tasks</li>
+      </ul>
+      <div class="highlight-yellow" style="margin-top:10pt;">
+        <p><strong>The style guide is the foundation.</strong> Everything the system does — every image it creates — is governed by the rules defined in that document.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Platforms in scope</h2>
+  <div class="platform-grid">
+    <div class="platform-item">
+      <h3>Social media</h3>
+      <p>LinkedIn, Instagram, Facebook</p>
+      <p>Launch platforms — expandable over time</p>
+    </div>
+    <div class="platform-item">
+      <h3>Content channels</h3>
+      <p>HubSpot newsletter, blog, website</p>
+      <p>Same images, same workflow</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Kay-Twelve Visual Content System</span>
+    <span>Page 1</span>
+  </div>
+</div>
+
+<!-- PAGE 2: The Kay-Twelve visual standard -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-title">The Kay-Twelve visual standard</div>
+    <div class="page-header-logo">Kay-Twelve · Visual Content System</div>
+  </div>
+
+  <p>Every image Kay-Twelve publishes should answer one question: <em>what is learning like here?</em> Not "what furniture is this?" — but what does it feel like to be a student in this space.</p>
+
+  <h2>Photography philosophy</h2>
+
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-accent" style="background:#208ca9;"></div>
+      <h3>Human-first</h3>
+      <p>Students are always the emotional center. Spaces tell stories through people — never through furniture catalogs.</p>
+    </div>
+    <div class="card">
+      <div class="card-accent" style="background:#208ca9;"></div>
+      <h3>Natural light only</h3>
+      <p>No flash, ever. Light should feel warm, even, and real — not studio-staged or artificial.</p>
+    </div>
+    <div class="card">
+      <div class="card-accent" style="background:#208ca9;"></div>
+      <h3>Clean but lived-in</h3>
+      <p>Spaces feel usable and real. Slight imperfections add authenticity. Never sterile, never a showroom.</p>
+    </div>
+  </div>
+
+  <h2>What we want — and what we don't</h2>
+
+  <div class="two-col" style="gap:14pt;">
+    <div>
+      <span class="label" style="color:#208ca9;">Keep</span>
+      <ul>
+        <li>Wide shots that show sightlines and full space</li>
+        <li>Students engaged in authentic activity</li>
+        <li>Natural light from windows visible or implied</li>
+        <li>Clean frames — furniture visible without clutter</li>
+        <li>Action and collaboration captured in the moment</li>
+        <li>High resolution, professional output</li>
+        <li>Color and material choices that read clearly</li>
+      </ul>
+    </div>
+    <div>
+      <span class="label" style="color:#c03060;">Avoid</span>
+      <ul>
+        <li>Clutter — storage overflow, paper piles, random objects</li>
+        <li>Students posed or smiling at the camera</li>
+        <li>Flash photography or harsh artificial light</li>
+        <li>Spaces with no student presence</li>
+        <li>Grainy or low-resolution output</li>
+        <li>Catalog-style product shots of furniture</li>
+        <li>Distracting background elements (tape on floor, fans, trash cans)</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Visual identity in images</h2>
+  <p>Brand colors are used in social card design (the overlay layer), not in photography direction. Photography should feel natural and environment-driven, not color-matched to brand guidelines.</p>
+
+  <div style="display:flex;gap:10pt;margin-top:10pt;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;gap:8pt;">
+      <div style="width:20pt;height:20pt;border-radius:4pt;background:#208ca9;"></div>
+      <span style="font-size:9pt;color:#555;">Pelorous Blue — Primary</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8pt;">
+      <div style="width:20pt;height:20pt;border-radius:4pt;background:#ffb41f;"></div>
+      <span style="font-size:9pt;color:#555;">Yellow — Secondary</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8pt;">
+      <div style="width:20pt;height:20pt;border-radius:4pt;background:#88a95b;"></div>
+      <span style="font-size:9pt;color:#555;">Chelsea Cucumber — Secondary</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8pt;">
+      <div style="width:20pt;height:20pt;border-radius:4pt;background:#ea5581;"></div>
+      <span style="font-size:9pt;color:#555;">Pink — Secondary</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8pt;">
+      <div style="width:20pt;height:20pt;border-radius:4pt;background:#9e9ca4;border:1pt solid #ddd;"></div>
+      <span style="font-size:9pt;color:#555;">Shady Lady Gray — Secondary</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Kay-Twelve Visual Content System</span>
+    <span>Page 2</span>
+  </div>
+</div>
+
+<!-- PAGE 3: Shot archetypes -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-title">The three shot types</div>
+    <div class="page-header-logo">Kay-Twelve · Visual Content System</div>
+  </div>
+
+  <p>Every image Kay-Twelve creates belongs to one of three named categories. The category determines the camera approach, composition rules, and which platforms it's best suited for.</p>
+
+  <div style="display:flex;flex-direction:column;gap:18pt;margin-top:18pt;">
+
+    <div class="card" style="padding:18pt;">
+      <div class="card-accent" style="background:#208ca9;"></div>
+      <div style="display:flex;gap:18pt;align-items:flex-start;margin-top:6pt;">
+        <div style="flex:1;">
+          <h3 style="font-size:12pt;color:#208ca9;margin-top:0;">The Space</h3>
+          <p>Wide establishing shot. Shows the full learning environment — architecture, furniture layout, sightlines, natural light. Students are optional but add warmth when present.</p>
+          <p style="margin-top:6pt;"><strong>Best for:</strong> <span class="tag">Project reveals</span><span class="tag">Website hero</span><span class="tag">LinkedIn articles</span><span class="tag">Newsletter headers</span></p>
+        </div>
+        <div style="width:100pt;flex-shrink:0;">
+          <span class="label">Key rules</span>
+          <ul style="font-size:9pt;color:#555;">
+            <li>Shoot from corner or doorway</li>
+            <li>Show full sightlines</li>
+            <li>No foreground clutter</li>
+            <li>Light source visible or implied</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="padding:18pt;">
+      <div class="card-accent" style="background:#ea5581;"></div>
+      <div style="display:flex;gap:18pt;align-items:flex-start;margin-top:6pt;">
+        <div style="flex:1;">
+          <h3 style="font-size:12pt;color:#ea5581;margin-top:0;">The Moment</h3>
+          <p>Close action shot. One student engaged with the space — reading, writing, thinking, or interacting with furniture in a creative way. Authentic, never posed. Background softly blurred.</p>
+          <p style="margin-top:6pt;"><strong>Best for:</strong> <span class="tag tag-pink">Instagram feed</span><span class="tag tag-pink">Storytelling posts</span><span class="tag tag-pink">Blog in-article</span></p>
+        </div>
+        <div style="width:100pt;flex-shrink:0;">
+          <span class="label">Key rules</span>
+          <ul style="font-size:9pt;color:#555;">
+            <li>Student centered, head room above</li>
+            <li>Engaged expression — not posed</li>
+            <li>Never smiling at camera</li>
+            <li>Space visible in background</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="padding:18pt;">
+      <div class="card-accent" style="background:#88a95b;"></div>
+      <div style="display:flex;gap:18pt;align-items:flex-start;margin-top:6pt;">
+        <div style="flex:1;">
+          <h3 style="font-size:12pt;color:#88a95b;margin-top:0;">The Collaboration</h3>
+          <p>Group shot showing 2–4 students working together — discussion, problem-solving, hands-on activity. The space is equally important as the students. Energy and purpose, not posed arrangement.</p>
+          <p style="margin-top:6pt;"><strong>Best for:</strong> <span class="tag tag-green">LinkedIn feed</span><span class="tag tag-green">Facebook</span><span class="tag tag-green">Newsletter features</span><span class="tag tag-green">Blog headers</span></p>
+        </div>
+        <div style="width:100pt;flex-shrink:0;">
+          <span class="label">Key rules</span>
+          <ul style="font-size:9pt;color:#555;">
+            <li>2–4 students max</li>
+            <li>Students face each other, not camera</li>
+            <li>Activity visible in hands or on surface</li>
+            <li>Furniture and layout clearly visible</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <span>Kay-Twelve Visual Content System</span>
+    <span>Page 3</span>
+  </div>
+</div>
+
+<!-- PAGE 4: Platform coverage -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-title">One brief, every platform</div>
+    <div class="page-header-logo">Kay-Twelve · Visual Content System</div>
+  </div>
+
+  <p>When a new image is requested, the system generates three files by default — one per aspect ratio. These three files cover every platform Kay-Twelve uses, with no manual resizing.</p>
+
+  <div class="ratio-row">
+    <div class="ratio-block">
+      <div class="ratio-visual" style="width:60pt;height:60pt;font-size:9pt;">1:1</div>
+      <div class="ratio-label">Square<br>1080 × 1080</div>
+    </div>
+    <div style="font-size:18pt;color:#ccc;padding-bottom:10pt;">+</div>
+    <div class="ratio-block">
+      <div class="ratio-visual" style="width:48pt;height:60pt;font-size:9pt;">4:5</div>
+      <div class="ratio-label">Portrait<br>1080 × 1350</div>
+    </div>
+    <div style="font-size:18pt;color:#ccc;padding-bottom:10pt;">+</div>
+    <div class="ratio-block">
+      <div class="ratio-visual" style="width:107pt;height:60pt;font-size:9pt;">16:9</div>
+      <div class="ratio-label">Landscape<br>1200 × 630</div>
+    </div>
+    <div style="font-size:18pt;color:#ccc;padding-bottom:10pt;">=</div>
+    <div style="flex:1;">
+      <p style="font-size:9pt;color:#555;"><strong style="color:#208ca9;font-size:10pt;">All platforms covered.</strong> LinkedIn, Instagram, Facebook, newsletter, and blog — from three files. Stories and Reels (9:16) are generated on request when needed.</p>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Platform</th>
+        <th>Use case</th>
+        <th>Format</th>
+        <th>Included in standard run</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>LinkedIn</td><td>Feed post</td><td>1:1</td><td>✓ Yes</td></tr>
+      <tr><td>LinkedIn</td><td>Article cover</td><td>16:9</td><td>✓ Yes</td></tr>
+      <tr><td>Instagram</td><td>Feed (primary)</td><td>4:5</td><td>✓ Yes</td></tr>
+      <tr><td>Instagram</td><td>Feed (square)</td><td>1:1</td><td>✓ Yes</td></tr>
+      <tr><td>Instagram</td><td>Stories / Reels</td><td>9:16</td><td>On request</td></tr>
+      <tr><td>Facebook</td><td>Feed post</td><td>1:1 or 4:5</td><td>✓ Yes</td></tr>
+      <tr><td>HubSpot newsletter</td><td>Header image</td><td>16:9</td><td>✓ Yes</td></tr>
+      <tr><td>Blog</td><td>Featured image</td><td>16:9</td><td>✓ Yes</td></tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-yellow" style="margin-top:14pt;">
+    <p><strong>Composition is designed for multi-format output.</strong> Every image is composed with the subject centered and generous space on all sides — so the same photo crops cleanly from a wide landscape format to a tall portrait format without losing the key subject.</p>
+  </div>
+
+  <div class="footer">
+    <span>Kay-Twelve Visual Content System</span>
+    <span>Page 4</span>
+  </div>
+</div>
+
+<!-- PAGE 5: The workflow -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-title">How it works</div>
+    <div class="page-header-logo">Kay-Twelve · Visual Content System</div>
+  </div>
+
+  <p>The workflow runs from a plain-language brief to a complete set of platform-ready images and branded social cards. Two one-time setup steps happen first, then the loop runs automatically every time.</p>
+
+  <h2>One-time setup</h2>
+  <div class="two-col">
+    <div class="highlight">
+      <h3 style="margin-top:0;color:#208ca9;">Visual style guide</h3>
+      <p>The document we're building now. Defines shot types, camera standards, platform mapping, and all generation rules. The system reads this every time it creates an image.</p>
+    </div>
+    <div class="highlight">
+      <h3 style="margin-top:0;color:#208ca9;">Social card templates</h3>
+      <p>Three Figma templates (one per format) defining where the photo sits, where the logo goes, and how brand color and text are applied. Designed once, reused every time.</p>
+    </div>
+  </div>
+
+  <h2>The repeatable loop</h2>
+
+  <div class="workflow-steps">
+    <div class="workflow-step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>Write a brief</h3>
+        <p>Describe the image and name the platforms: "Show two middle school students working together at a flexible table in a bright library space, for LinkedIn and Instagram."</p>
+      </div>
+    </div>
+    <div class="workflow-step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h3>System reads the style guide</h3>
+        <p>Identifies the shot type (The Collaboration), selects the right camera settings, determines which formats are needed (1:1, 4:5, 16:9).</p>
+      </div>
+    </div>
+    <div class="workflow-step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h3>Images generated</h3>
+        <p>Three image generation requests are submitted — same subject and scene, three different formats. All governed by Kay-Twelve style standards.</p>
+      </div>
+    </div>
+    <div class="workflow-step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h3>Branded social cards composed</h3>
+        <p>Each photo is placed into the matching Figma card template. Logo, color bar, and optional caption text are applied automatically. Three finished cards, ready to post.</p>
+      </div>
+    </div>
+    <div class="workflow-step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h3>Deliverables ready</h3>
+        <p>Raw photos (for newsletter, blog, flexible use) and branded social cards (for LinkedIn, Instagram, Facebook) — organized by platform and named consistently.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Real environment photos (inpainting)</h2>
+  <p>When Kay-Twelve has a professional photo of a real client space but needs students in the scene, the system can compose students into the existing environment — preserving the authentic space while adding human presence. The workflow is identical; the system routes to the right method automatically.</p>
+
+  <div class="footer">
+    <span>Kay-Twelve Visual Content System</span>
+    <span>Page 5</span>
+  </div>
+</div>
+
+<!-- PAGE 6: What's next -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-header-title">What's next</div>
+    <div class="page-header-logo">Kay-Twelve · Visual Content System</div>
+  </div>
+
+  <div class="highlight" style="margin-bottom:20pt;">
+    <p><strong>This document is the planning overview.</strong> The visual style guide and generation workflow are the next deliverables. Once those are complete, the system is operational.</p>
+  </div>
+
+  <h2>Immediate next steps</h2>
+
+  <div class="cards-grid">
+    <div class="card" style="padding:16pt;">
+      <div class="card-accent" style="background:#208ca9;"></div>
+      <h3 style="margin-top:8pt;">1. Visual style guide</h3>
+      <p>The complete AI-executable document and human-readable PDF. Defines all photography standards, shot types, and generation rules. <strong>In progress.</strong></p>
+    </div>
+    <div class="card" style="padding:16pt;">
+      <div class="card-accent" style="background:#ffb41f;"></div>
+      <h3 style="margin-top:8pt;">2. Figma card templates</h3>
+      <p>Three social card master templates (1:1, 4:5, 16:9) with defined zones for photo, logo, color bar, and caption. <strong>Follow-on.</strong></p>
+    </div>
+    <div class="card" style="padding:16pt;">
+      <div class="card-accent" style="background:#88a95b;"></div>
+      <h3 style="margin-top:8pt;">3. Workflow automation</h3>
+      <p>The automated card composition layer that reads Figma templates and applies branding to generated photos. <strong>Follow-on.</strong></p>
+    </div>
+  </div>
+
+  <h2>Future expansion</h2>
+  <ul>
+    <li>Instagram Stories and Reels (9:16) templates</li>
+    <li>Video content workflow (short-form social video)</li>
+    <li>Additional social platforms as Kay-Twelve's presence grows</li>
+    <li>Alt-text and caption generation alongside image creation</li>
+  </ul>
+
+  <div class="highlight-yellow" style="margin-top:20pt;">
+    <p><strong>The system is designed to grow.</strong> New platforms, new content types, and new templates can be added without rebuilding the foundation. The style guide and visual standards stay consistent regardless of how the distribution channels evolve.</p>
+  </div>
+
+  <div style="margin-top:32pt;padding-top:18pt;border-top:1.5pt solid #208ca9;display:flex;justify-content:space-between;align-items:flex-end;">
+    <div>
+      <p style="font-size:8pt;color:#aaa;margin-bottom:4pt;">Prepared by</p>
+      <p style="font-size:10pt;font-weight:600;color:#208ca9;">Kay-Twelve</p>
+      <p style="font-size:8.5pt;color:#555;">www.Kay-Twelve.com · 888-624-5451</p>
+    </div>
+    <div style="text-align:right;">
+      <p style="font-size:8pt;color:#aaa;margin-bottom:4pt;">Document date</p>
+      <p style="font-size:9pt;color:#333;">April 2026</p>
+      <p style="font-size:8pt;color:#aaa;">Visual Content System v1.0</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span>Kay-Twelve Visual Content System</span>
+    <span>Page 6</span>
+  </div>
+</div>
+
+</body>
+</html>

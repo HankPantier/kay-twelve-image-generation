@@ -1,0 +1,81 @@
+<h2>End-to-end image workflow — Option C</h2>
+<p class="subtitle">From a single brief to a full platform-ready social card set. Two one-time setup steps, then the loop is fully automated.</p>
+
+<div class="section">
+  <span class="label" style="color:#ffb41f;">One-time setup (do once, reuse forever)</span>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px;">
+    <div style="background:#1a1a2e;border:1px solid #333;border-radius:8px;padding:14px;">
+      <p style="color:#208ca9;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Setup 1 — Figma</p>
+      <p style="font-size:13px;color:#ccc;margin-top:6px;">Design master social card templates for each platform ratio (1:1, 4:5, 16:9). Define photo zone, logo position, text zone, brand color bars. Export as Figma components.</p>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #333;border-radius:8px;padding:14px;">
+      <p style="color:#208ca9;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;">Setup 2 — Style Guide</p>
+      <p style="font-size:13px;color:#ccc;margin-top:6px;">The <code>.md</code> we're building now. Defines shot archetypes, Nano Banana defaults, negative prompts, and composition rules. Claude Code reads this every run.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="label" style="color:#88a95b;">The repeatable loop — triggered by a single prompt</span>
+
+  <div style="margin-top:12px;position:relative;">
+
+    <!-- Step 1 -->
+    <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;">
+      <div style="min-width:32px;height:32px;border-radius:50%;background:#208ca9;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white;">1</div>
+      <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:8px;padding:12px;flex:1;">
+        <p style="color:#fff;font-size:13px;font-weight:600;">User writes a brief</p>
+        <p style="color:#888;font-size:12px;margin-top:4px;">e.g. "Make me an image for LinkedIn, Instagram, and the blog showing two middle school students collaborating at a flexible table in a bright library space."</p>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;">
+      <div style="min-width:32px;height:32px;border-radius:50%;background:#208ca9;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white;">2</div>
+      <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:8px;padding:12px;flex:1;">
+        <p style="color:#fff;font-size:13px;font-weight:600;">Claude Code reads the style guide + determines shot type</p>
+        <p style="color:#888;font-size:12px;margin-top:4px;">Identifies archetype (collaboration shot), selects correct Nano Banana defaults (85mm, f/1.4, ISO 400, Portra 400), and notes which platform ratios are needed (1:1, 4:5, 16:9).</p>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;">
+      <div style="min-width:32px;height:32px;border-radius:50%;background:#208ca9;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white;">3</div>
+      <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:8px;padding:12px;flex:1;">
+        <p style="color:#fff;font-size:13px;font-weight:600;">Nano Banana schemas generated (3 files)</p>
+        <p style="color:#888;font-size:12px;margin-top:4px;">One schema per platform ratio — same subject/scene/style, different <code>meta.aspect_ratio</code>. Sent to Nano Banana for image generation.</p>
+        <div style="display:flex;gap:8px;margin-top:8px;">
+          <span style="background:#208ca9;color:white;font-size:11px;padding:2px 8px;border-radius:4px;">1:1</span>
+          <span style="background:#ea5581;color:white;font-size:11px;padding:2px 8px;border-radius:4px;">4:5</span>
+          <span style="background:#88a95b;color:white;font-size:11px;padding:2px 8px;border-radius:4px;">16:9</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;">
+      <div style="min-width:32px;height:32px;border-radius:50%;background:#208ca9;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:white;">4</div>
+      <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:8px;padding:12px;flex:1;">
+        <p style="color:#fff;font-size:13px;font-weight:600;">Photos returned → Pencil composes social cards</p>
+        <p style="color:#888;font-size:12px;margin-top:4px;">Pencil reads the Figma template definitions, drops each photo into the correct card template, applies brand elements (logo, color bar, text zone). Outputs final card files.</p>
+      </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:4px;">
+      <div style="min-width:32px;height:32px;border-radius:50%;background:#ffb41f;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#111;">5</div>
+      <div style="background:#1a2a1a;border:1px solid #2a4a2a;border-radius:8px;padding:12px;flex:1;">
+        <p style="color:#fff;font-size:13px;font-weight:600;">Deliverables ready</p>
+        <p style="color:#888;font-size:12px;margin-top:4px;">3 raw photos (no branding) + 3 branded social cards, organized by platform. Ready to post or hand off to the team.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <span class="label">Inpainting variant (for real environment photos)</span>
+  <div style="background:#1a1a2e;border:1px solid #333;border-radius:8px;padding:14px;margin-top:10px;">
+    <p style="font-size:13px;color:#ccc;">Same loop — except in Step 3, the schema includes <code>input_image</code> pointing to the real environment photo. Nano Banana adds students into the existing space rather than generating from scratch. Card composition in Step 4 is identical.</p>
+  </div>
+</div>

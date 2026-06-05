@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "Bash(bash /Users/webhank/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/brainstorming/scripts/start-server.sh --project-dir /Users/webhank/Local_Sites/Kay-Twelve/ImageGeneration)",
+      "Bash(pandoc --version)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --no-sandbox --print-to-pdf=/Users/webhank/Local_Sites/Kay-Twelve/ImageGeneration/docs/kay-twelve-visual-content-system-overview.pdf --print-to-pdf-no-header --no-pdf-header-footer file:///Users/webhank/Local_Sites/Kay-Twelve/ImageGeneration/docs/kay-twelve-visual-content-system-overview.html)"
+    ]
+  }
+}

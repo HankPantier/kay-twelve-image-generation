@@ -1,0 +1,89 @@
+<h2>Platform → Aspect Ratio Mapping</h2>
+<p class="subtitle">When you request an image for multiple platforms, these are the ratios generated. Shared ratios mean one file serves both.</p>
+
+<div class="section">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px;">
+
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:8px;padding:16px;">
+      <span class="label" style="color:#208ca9;">LinkedIn</span>
+      <div style="margin-top:10px;">
+        <p style="font-size:13px;color:#ccc;">Feed post: <strong>1:1</strong> (1200×1200) or <strong>4:5</strong></p>
+        <p style="font-size:13px;color:#ccc;">Article cover: <strong>16:9</strong> (1200×627)</p>
+        <p style="font-size:13px;color:#ccc;">Newsletter share: <strong>1.91:1</strong></p>
+      </div>
+      <div style="margin-top:10px;padding:8px;background:#111;border-radius:4px;font-size:12px;color:#888;">
+        Primary ratio: <code>1:1</code> — works for feed, can crop to 16:9
+      </div>
+    </div>
+
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:8px;padding:16px;">
+      <span class="label" style="color:#ea5581;">Instagram</span>
+      <div style="margin-top:10px;">
+        <p style="font-size:13px;color:#ccc;">Feed (portrait): <strong>4:5</strong> (1080×1350) ← best reach</p>
+        <p style="font-size:13px;color:#ccc;">Feed (square): <strong>1:1</strong> (1080×1080)</p>
+        <p style="font-size:13px;color:#ccc;">Stories / Reels: <strong>9:16</strong> (1080×1920)</p>
+      </div>
+      <div style="margin-top:10px;padding:8px;background:#111;border-radius:4px;font-size:12px;color:#888;">
+        Primary ratio: <code>4:5</code> — max feed real estate
+      </div>
+    </div>
+
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:8px;padding:16px;">
+      <span class="label" style="color:#88a95b;">Facebook</span>
+      <div style="margin-top:10px;">
+        <p style="font-size:13px;color:#ccc;">Feed post: <strong>1:1</strong> or <strong>4:5</strong></p>
+        <p style="font-size:13px;color:#ccc;">Link preview: <strong>1.91:1</strong></p>
+        <p style="font-size:13px;color:#ccc;">Cover photo: <strong>16:9</strong></p>
+      </div>
+      <div style="margin-top:10px;padding:8px;background:#111;border-radius:4px;font-size:12px;color:#888;">
+        Shares ratio with LinkedIn — usually no extra generation needed
+      </div>
+    </div>
+
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:8px;padding:16px;">
+      <span class="label" style="color:#ffb41f;">Newsletter + Blog</span>
+      <div style="margin-top:10px;">
+        <p style="font-size:13px;color:#ccc;">HubSpot newsletter header: <strong>16:9</strong> (600px wide)</p>
+        <p style="font-size:13px;color:#ccc;">Blog featured image: <strong>16:9</strong> (1200×630)</p>
+        <p style="font-size:13px;color:#ccc;">In-article image: <strong>3:2</strong> or <strong>16:9</strong></p>
+      </div>
+      <div style="margin-top:10px;padding:8px;background:#111;border-radius:4px;font-size:12px;color:#888;">
+        One 16:9 image covers newsletter + blog header
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <span class="label">Standard "Full Run" — 3 files cover all platforms</span>
+  <div style="display:flex;gap:12px;margin-top:12px;align-items:flex-end;">
+
+    <div style="text-align:center;">
+      <div style="width:90px;height:90px;background:#208ca9;border-radius:6px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:11px;color:white;font-weight:bold;">1:1</div>
+      <p style="font-size:11px;color:#888;margin-top:6px;">LinkedIn feed<br>Facebook feed<br>Instagram square</p>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:72px;height:90px;background:#ea5581;border-radius:6px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:11px;color:white;font-weight:bold;">4:5</div>
+      <p style="font-size:11px;color:#888;margin-top:6px;">Instagram<br>primary feed<br>Facebook feed</p>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:160px;height:90px;background:#88a95b;border-radius:6px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:11px;color:white;font-weight:bold;">16:9</div>
+      <p style="font-size:11px;color:#888;margin-top:6px;">Blog header<br>Newsletter<br>LinkedIn article</p>
+    </div>
+
+    <div style="text-align:center;">
+      <div style="width:50px;height:90px;background:#9e9ca4;border-radius:6px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:11px;color:white;font-weight:bold;">9:16</div>
+      <p style="font-size:11px;color:#888;margin-top:6px;">Instagram<br>Stories / Reels<br>(on demand)</p>
+    </div>
+
+  </div>
+  <p style="font-size:12px;color:#666;margin-top:16px;">9:16 Stories is generated on-demand rather than by default — most posts don't need it.</p>
+</div>
+
+<div class="section">
+  <span class="label" style="color:#ffb41f;">⚠ Composition implication</span>
+  <p style="font-size:13px;color:#ccc;margin-top:8px;">Because the same image needs to work at both 16:9 (wide) and 4:5 (tall), <strong>the subject must be centered</strong> and the scene designed with generous head/foot room. Safe zone rules become critical — and will be defined in the style guide.</p>
+</div>

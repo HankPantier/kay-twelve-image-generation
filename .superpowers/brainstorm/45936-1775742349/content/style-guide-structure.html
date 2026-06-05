@@ -1,0 +1,108 @@
+<h2>Kay-Twelve Visual Style Guide — document structure</h2>
+<p class="subtitle">12 sections across two layers: the photography layer (what to generate) and the workflow layer (how to generate and compose it). Click any section to flag it for discussion.</p>
+
+<div class="section">
+  <span class="label" style="color:#208ca9;">Layer 1 — Photography Standards</span>
+  <p style="font-size:12px;color:#888;margin-top:4px;">Defines what on-brand looks like. Read by Claude Code to make generation decisions. Also human-readable for photographers and agency partners.</p>
+
+  <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px;">
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#208ca9;font-weight:700;font-size:13px;min-width:24px;">1</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Purpose & scope</p>
+        <p style="color:#888;font-size:12px;">What this guide governs, how it's used (AI-first), link to workflow. Short — half a page.</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#208ca9;font-weight:700;font-size:13px;min-width:24px;">2</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Brand visual identity (reference)</p>
+        <p style="color:#888;font-size:12px;">Color palette, fonts — for use in social card overlays, not photography direction. Pelorous Blue #208ca9 as primary.</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#208ca9;font-weight:700;font-size:13px;min-width:24px;">3</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Photography philosophy</p>
+        <p style="color:#888;font-size:12px;">The Kay-Twelve visual story in words: human-first, clean but lived-in, natural light, storytelling over catalog. The "why" behind every rule that follows.</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#208ca9;font-weight:700;font-size:13px;min-width:24px;">4</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Good vs. bad — annotated examples</p>
+        <p style="color:#888;font-size:12px;">The 5 good + 4 bad examples with their reasoning captured as rules. Image paths reference the <code>examples/</code> folder. AI reads this as pattern recognition training.</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#208ca9;font-weight:700;font-size:13px;min-width:24px;">5</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Shot archetypes</p>
+        <p style="color:#888;font-size:12px;"><strong>The Space · The Moment · The Collaboration</strong> — each with composition rules, when to use, and which examples they map to. Confirmed ✓</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#208ca9;font-weight:700;font-size:13px;min-width:24px;">6</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Composition & safe zone rules</p>
+        <p style="color:#888;font-size:12px;">Center-weighted framing, head/foot room requirements for multi-ratio crops. The rules that make one image work at 16:9 and 4:5 simultaneously.</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #2a2a4a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#208ca9;font-weight:700;font-size:13px;min-width:24px;">7</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Universal negative prompts library</p>
+        <p style="color:#888;font-size:12px;">Everything that must never appear: clutter, flash, tape on floor, posed smiles, catalog feel, grainy texture. Applied to every Nano Banana run regardless of archetype.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <span class="label" style="color:#ea5581;">Layer 2 — Generation Workflow</span>
+  <p style="font-size:12px;color:#888;margin-top:4px;">Defines how to generate. Executable instructions for Claude Code. References Layer 1 at every step.</p>
+
+  <div style="margin-top:10px;display:flex;flex-direction:column;gap:8px;">
+    <div style="background:#1a1a2e;border:1px solid #3a1a2a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#ea5581;font-weight:700;font-size:13px;min-width:24px;">8</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Platform & aspect ratio guide</p>
+        <p style="color:#888;font-size:12px;">The mapping table (confirmed ✓). Standard full run = 1:1 + 4:5 + 16:9. 9:16 on demand. Includes output naming conventions.</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #3a1a2a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#ea5581;font-weight:700;font-size:13px;min-width:24px;">9</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Nano Banana schema defaults (per archetype)</p>
+        <p style="color:#888;font-size:12px;">The exact JSON schema blocks for The Space, The Moment, and The Collaboration — including camera, lens, aperture, ISO, film stock, negative prompts. Drop-in templates.</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #3a1a2a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#ea5581;font-weight:700;font-size:13px;min-width:24px;">10</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Workflow A — full AI generation</p>
+        <p style="color:#888;font-size:12px;">Step-by-step: read brief → identify archetype → generate 3 schemas → submit to Nano Banana → receive photos. With example prompt and expected output.</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #3a1a2a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#ea5581;font-weight:700;font-size:13px;min-width:24px;">11</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Workflow B — inpainting (student insertion)</p>
+        <p style="color:#888;font-size:12px;">When to use (real client environment photos, environment/ folder). Schema difference: <code>input_image</code> with path + <code>usage_type</code>. Decision rules for when inpainting vs. full generation.</p>
+      </div>
+    </div>
+    <div style="background:#1a1a2e;border:1px solid #3a1a2a;border-radius:6px;padding:12px;display:flex;gap:12px;align-items:flex-start;">
+      <span style="color:#ea5581;font-weight:700;font-size:13px;min-width:24px;">12</span>
+      <div>
+        <p style="color:#fff;font-size:13px;font-weight:600;">Social card composition (Figma + Pencil)</p>
+        <p style="color:#888;font-size:12px;">Figma template spec: photo zone, logo position, text zone, brand color bar. Pencil generation instructions: how to read the template and compose card variants per platform.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top:16px;padding:14px;background:#1a2a1a;border:1px solid #2a4a2a;border-radius:8px;">
+  <p style="color:#88a95b;font-size:13px;font-weight:600;">Deliverables from this structure</p>
+  <p style="font-size:13px;color:#ccc;margin-top:6px;"><code>ImageGeneration/docs/kay-twelve-visual-style-guide.md</code> — AI-executable, 12 sections<br>
+  <code>ImageGeneration/docs/kay-twelve-visual-style-guide.pdf</code> — exported for human sharing</p>
+</div>
