@@ -1,0 +1,203 @@
+{
+  "_meta": {
+    "brief": "Three diverse middle school students doing hands-on project work at a hexagonal collaborative table in an IB classroom",
+    "archetype": "The Collaboration",
+    "workflow": "B \u2014 Inpainting (student insertion)",
+    "environment_photo": "uploaded directly to Nano Banana",
+    "ratios": [
+      "16:9",
+      "1:1",
+      "4:5"
+    ],
+    "generated": "2026-04-13"
+  },
+  "schemas": [
+    {
+      "_label": "16:9 \u2014 Blog, newsletter header, LinkedIn article",
+      "user_intent": "Three diverse middle school students collaborating on a hands-on project at a hexagonal table in a modern IB classroom with blue-green carpet and colorful chairs",
+      "meta": {
+        "aspect_ratio": "16:9",
+        "quality": "ultra_photorealistic"
+      },
+      "subject": [
+        {
+          "id": "student_1",
+          "type": "person",
+          "description": "Middle school student, approximately 12 years old, Black girl with natural curly hair pulled back in a puff, wearing a navy blue polo shirt and khaki pants, leaning forward over the table reaching for craft materials, hands actively working",
+          "age": "12 years old",
+          "gender": "female",
+          "hair": {
+            "style": "afro",
+            "color": "dark_brown"
+          },
+          "position": "left",
+          "pose": "leaning forward over table, hands manipulating materials, looking down at project",
+          "expression": "engaged",
+          "clothing": [
+            {
+              "item": "polo shirt",
+              "color": "navy blue",
+              "fabric": "cotton",
+              "fit": "regular",
+              "layer": "outer"
+            },
+            {
+              "item": "khaki pants",
+              "color": "khaki",
+              "fabric": "cotton",
+              "fit": "regular",
+              "layer": "outer"
+            }
+          ]
+        },
+        {
+          "id": "student_2",
+          "type": "person",
+          "description": "Middle school student, approximately 11 years old, Latino boy with short textured hair, wearing a green crew neck t-shirt and dark jeans, sitting upright and pointing at something on the table while talking to classmates",
+          "age": "11 years old",
+          "gender": "male",
+          "hair": {
+            "style": "textured_crop",
+            "color": "dark_brown"
+          },
+          "position": "center",
+          "pose": "sitting at table, one hand pointing at materials on table surface, turned slightly toward student on his left, mouth slightly open mid-conversation",
+          "expression": "engaged",
+          "clothing": [
+            {
+              "item": "crew neck t-shirt",
+              "color": "forest green",
+              "fabric": "cotton",
+              "fit": "regular",
+              "layer": "outer"
+            },
+            {
+              "item": "jeans",
+              "color": "dark indigo",
+              "fabric": "denim",
+              "fit": "regular",
+              "layer": "outer"
+            }
+          ]
+        },
+        {
+          "id": "student_3",
+          "type": "person",
+          "description": "Middle school student, approximately 12 years old, South Asian girl with long dark hair in a low ponytail, wearing a light purple hoodie and black leggings, holding a marker or pencil in one hand while examining a piece of the project",
+          "age": "12 years old",
+          "gender": "female",
+          "hair": {
+            "style": "low_ponytail",
+            "color": "jet_black"
+          },
+          "position": "right",
+          "pose": "seated slightly angled toward center, holding a marker in right hand, left hand resting on table near project materials, looking at what student_2 is pointing at",
+          "expression": "engaged",
+          "clothing": [
+            {
+              "item": "hoodie",
+              "color": "light purple",
+              "fabric": "fleece",
+              "fit": "loose",
+              "layer": "outer"
+            },
+            {
+              "item": "leggings",
+              "color": "black",
+              "fabric": "spandex",
+              "fit": "slim",
+              "layer": "outer"
+            }
+          ]
+        }
+      ],
+      "scene": {
+        "location": "Modern elementary/middle school IB classroom with hexagonal collaborative tables, blue and green student chairs, blue-green geometric patterned carpet, open cubbies with storage bins along walls, whiteboard and projector mounted on wall, glass garage-style window to adjacent learning space",
+        "lighting": {
+          "type": "natural_sunlight",
+          "direction": "front_lit"
+        },
+        "background_elements": [
+          "hexagonal white collaborative tables",
+          "blue and green student chairs",
+          "blue and green geometric patterned carpet",
+          "open storage cubbies with bins along walls",
+          "whiteboard mounted on wall",
+          "glass garage-style window to adjacent classroom",
+          "ceiling-mounted projector",
+          "craft and project materials spread on table surface"
+        ],
+        "input_image": {
+          "path": "./ib-classroom-environment.jpg",
+          "usage_type": "style_transfer",
+          "strength": 0.75
+        }
+      },
+      "technical": {
+        "camera_model": "Nikon Z 8",
+        "lens": "50mm",
+        "aperture": "f/2.8",
+        "iso": "400",
+        "film_stock": "Kodak Portra 400"
+      },
+      "composition": {
+        "framing": "full_body",
+        "angle": "eye_level",
+        "focus_point": "whole_scene",
+        "logo_safe_zone": {
+          "region": "bottom_left",
+          "width_percent": 25,
+          "height_percent": 35,
+          "instruction": "Keep all primary subjects, faces, and focal content clear of this region. The Kay-Twelve logo badge overlay is applied here in post-processing."
+        }
+      },
+      "advanced": {
+        "negative_prompt": [
+          "clutter",
+          "storage overflowing",
+          "tape on floor",
+          "water bottles",
+          "trash can",
+          "fan",
+          "paper piles",
+          "boxes",
+          "worn furniture",
+          "posed smile at camera",
+          "looking at camera",
+          "smiling at camera",
+          "low quality",
+          "grainy",
+          "blurry",
+          "blur",
+          "noise",
+          "grain",
+          "watermark",
+          "text",
+          "logo",
+          "bad hands",
+          "extra fingers",
+          "mutated",
+          "flash photography",
+          "harsh lighting",
+          "studio lighting",
+          "artificial light",
+          "catalog style",
+          "sterile",
+          "empty showroom",
+          "product photography",
+          "cropped",
+          "worst quality",
+          "distorted",
+          "primary subject in bottom left corner",
+          "face in bottom left corner",
+          "focal point in bottom left",
+          "key action in bottom left quadrant",
+          "student face in bottom left",
+          "hands in bottom left corner"
+        ],
+        "hdr_mode": true,
+        "magic_prompt_enhancer": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "user_intent": "Two middle school students reading independently in a vibrant modern learning commons with colorful soft seating, circular reading pods, and tiered seating — warm, natural, not posed",
+  "meta": {
+    "aspect_ratio": "1:1",
+    "quality": "ultra_photorealistic"
+  },
+  "subject": [
+    {
+      "id": "reader_1",
+      "type": "person",
+      "description": "Middle school student, approximately 12 years old, Asian boy with glasses and a short side part, wearing a heather gray crewneck sweatshirt and dark joggers, curled up sideways inside a large circular upholstered reading pod with his knees drawn up, holding a chapter book open in both hands, completely absorbed in reading",
+      "age": "12 years old",
+      "gender": "male",
+      "hair": {
+        "style": "side_part",
+        "color": "jet_black"
+      },
+      "position": "left",
+      "pose": "curled up sideways inside a circular reading pod, knees drawn up, holding an open book in both hands, eyes on the page",
+      "expression": "engaged",
+      "clothing": [
+        {
+          "item": "crewneck sweatshirt",
+          "color": "heather gray",
+          "fabric": "fleece",
+          "fit": "regular",
+          "layer": "outer"
+        },
+        {
+          "item": "jogger pants",
+          "color": "dark charcoal",
+          "fabric": "cotton",
+          "fit": "slim",
+          "layer": "outer"
+        }
+      ],
+      "accessories": [
+        {
+          "item": "glasses",
+          "material": "plastic",
+          "color": "dark blue",
+          "location": "face"
+        }
+      ]
+    },
+    {
+      "id": "reader_2",
+      "type": "person",
+      "description": "Middle school student, approximately 11 years old, Black girl with box braids past her shoulders, wearing a soft yellow cardigan over a white t-shirt and olive cargo pants, sitting cross-legged on a curved upholstered bench with a book resting open on her lap, one hand turning a page",
+      "age": "11 years old",
+      "gender": "female",
+      "hair": {
+        "style": "box_braids",
+        "color": "dark_brown"
+      },
+      "position": "right",
+      "pose": "sitting cross-legged on a curved soft bench, book open on lap, right hand turning a page, head tilted slightly down toward the book",
+      "expression": "engaged",
+      "clothing": [
+        {
+          "item": "cardigan",
+          "color": "soft yellow",
+          "fabric": "cotton",
+          "fit": "loose",
+          "layer": "outer"
+        },
+        {
+          "item": "t-shirt",
+          "color": "white",
+          "fabric": "cotton",
+          "fit": "regular",
+          "layer": "inner"
+        },
+        {
+          "item": "cargo pants",
+          "color": "olive green",
+          "fabric": "cotton",
+          "fit": "regular",
+          "layer": "outer"
+        }
+      ]
+    }
+  ],
+  "scene": {
+    "location": "Vibrant modern elementary school learning commons with polished concrete and wood-look flooring, colorful soft seating including large circular upholstered reading pods with contrasting interior colors, curved modular benches in blues and greens, tiered stadium-style seating in purple and yellow, open sightlines to adjacent maker space through floor-to-ceiling glass walls",
+    "lighting": {
+      "type": "natural_sunlight",
+      "direction": "side_lit"
+    },
+    "background_elements": [
+      "large circular upholstered reading pod in teal blue with bright yellow interior",
+      "curved modular soft benches in green and blue",
+      "tiered purple and yellow stadium seating against wall",
+      "polished concrete floor with geometric carpet sections in gray and green",
+      "round recessed ceiling lights",
+      "floor-to-ceiling glass wall looking into adjacent learning space",
+      "geometric dark acoustic ceiling baffles in angular pattern",
+      "colorful confetti-style wall graphics in red purple and blue",
+      "hexagonal upholstered stools in navy and green clustered around low tables"
+    ]
+  },
+  "technical": {
+    "camera_model": "Nikon Z 8",
+    "lens": "50mm",
+    "aperture": "f/2.8",
+    "iso": "400",
+    "film_stock": "Kodak Portra 400"
+  },
+  "composition": {
+    "framing": "full_body",
+    "angle": "eye_level",
+    "focus_point": "whole_scene",
+    "logo_safe_zone": {
+      "region": "bottom_left",
+      "width_percent": 25,
+      "height_percent": 35,
+      "instruction": "Keep all primary subjects, faces, and focal content clear of this region. The Kay-Twelve logo badge overlay is applied here in post-processing."
+    }
+  },
+  "advanced": {
+    "negative_prompt": [
+      "clutter",
+      "storage overflowing",
+      "tape on floor",
+      "water bottles",
+      "trash can",
+      "fan",
+      "paper piles",
+      "boxes",
+      "worn furniture",
+      "posed smile at camera",
+      "looking at camera",
+      "smiling at camera",
+      "low quality",
+      "grainy",
+      "blurry",
+      "blur",
+      "noise",
+      "grain",
+      "watermark",
+      "text",
+      "logo",
+      "bad hands",
+      "extra fingers",
+      "mutated",
+      "flash photography",
+      "harsh lighting",
+      "studio lighting",
+      "artificial light",
+      "catalog style",
+      "sterile",
+      "empty showroom",
+      "product photography",
+      "cropped",
+      "worst quality",
+      "distorted",
+      "primary subject in bottom left corner",
+      "face in bottom left corner",
+      "focal point in bottom left",
+      "key action in bottom left quadrant",
+      "student face in bottom left",
+      "hands in bottom left corner"
+    ],
+    "hdr_mode": true,
+    "magic_prompt_enhancer": false
+  }
+}
