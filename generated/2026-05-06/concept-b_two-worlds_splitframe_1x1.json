@@ -1,0 +1,138 @@
+{
+  "user_intent": "A single square split-frame image making a visual argument about who learning spaces are actually built for. Left half: a traditional institutional classroom — rows of fixed desks, cold fluorescent overhead lighting, two elementary students sitting rigidly and passively. Right half: a modern flexible learning environment — warm natural light from large windows, flexible furniture, the same two students now leaning in, active, and engaged. A clear architectural or lighting transition divides the two worlds. No text. The image argues by contrast alone. Square format — each half is a compact vertical column, so subjects should be framed as medium shots to remain legible within the tighter crop.",
+  "meta": {
+    "aspect_ratio": "1:1",
+    "quality": "ultra_photorealistic"
+  },
+  "subject": [
+    {
+      "id": "student_A_left",
+      "type": "person",
+      "description": "Elementary school student, approximately 10 years old, Black girl with hair in two puffs, wearing a light blue t-shirt and dark pants. Seated rigidly at a fixed individual desk in a row, spine straight against an uncomfortable hard chair, hands folded flat on the empty desk surface, eyes forward or downward, expression blank and uninspired — the posture of endurance, not engagement.",
+      "age": "10 years old",
+      "gender": "female",
+      "hair": { "style": "two_puffs", "color": "dark_brown" },
+      "position": "left",
+      "pose": "sitting rigidly upright at a fixed desk, hands flat on empty desk surface, looking forward or down, shoulders slightly slumped, no materials in front of her",
+      "expression": "neutral",
+      "clothing": [
+        { "item": "t-shirt", "color": "light blue", "fabric": "cotton", "fit": "regular", "layer": "outer" },
+        { "item": "pants", "color": "dark charcoal", "fabric": "cotton", "fit": "regular", "layer": "outer" }
+      ]
+    },
+    {
+      "id": "student_B_left",
+      "type": "person",
+      "description": "Elementary school student, approximately 10 years old, white boy with light brown hair, wearing a gray t-shirt and dark jeans. Seated at a fixed desk in the same institutional row, slumped slightly, chin resting on one hand, looking forward with a blank unfocused expression — bored, waiting, enduring.",
+      "age": "10 years old",
+      "gender": "male",
+      "hair": { "style": "short_side_part", "color": "light_brown" },
+      "position": "left_center",
+      "pose": "seated at fixed desk, chin resting on one hand propped on the desk, elbow on desk surface, eyes forward but unfocused, other arm limp",
+      "expression": "neutral",
+      "clothing": [
+        { "item": "t-shirt", "color": "heather gray", "fabric": "cotton", "fit": "regular", "layer": "outer" },
+        { "item": "jeans", "color": "dark wash", "fabric": "denim", "fit": "regular", "layer": "outer" }
+      ]
+    },
+    {
+      "id": "student_A_right",
+      "type": "person",
+      "description": "The same Black girl with hair in two puffs, same light blue t-shirt — now on the right side of the frame, completely transformed in body language. Leaning forward over a flexible collaborative table, both hands actively working with project materials, head tilted toward a classmate, expression alive with focus and curiosity.",
+      "age": "10 years old",
+      "gender": "female",
+      "hair": { "style": "two_puffs", "color": "dark_brown" },
+      "position": "right_center",
+      "pose": "leaning forward over a flexible table, both hands engaged with project materials, slightly turned toward student_B_right, expression fully engaged",
+      "expression": "engaged",
+      "clothing": [
+        { "item": "t-shirt", "color": "light blue", "fabric": "cotton", "fit": "regular", "layer": "outer" },
+        { "item": "pants", "color": "dark charcoal", "fabric": "cotton", "fit": "regular", "layer": "outer" }
+      ]
+    },
+    {
+      "id": "student_B_right",
+      "type": "person",
+      "description": "The same white boy with light brown hair, same gray t-shirt — now on the right side of the frame, completely transformed. Sitting forward at the edge of a flexible chair, pointing at something on the work surface with one hand, mouth slightly open mid-sentence, eyes bright and focused.",
+      "age": "10 years old",
+      "gender": "male",
+      "hair": { "style": "short_side_part", "color": "light_brown" },
+      "position": "right",
+      "pose": "sitting forward at the edge of a flexible chair, one hand pointing at materials on the table, body turned slightly toward student_A_right, mouth open mid-conversation",
+      "expression": "engaged",
+      "clothing": [
+        { "item": "t-shirt", "color": "heather gray", "fabric": "cotton", "fit": "regular", "layer": "outer" },
+        { "item": "jeans", "color": "dark wash", "fabric": "denim", "fit": "regular", "layer": "outer" }
+      ]
+    }
+  ],
+  "scene": {
+    "location": "A single square space that transitions visibly from a traditional institutional classroom on the left to a modern flexible learning environment on the right — two worlds occupying one frame, separated by a clear architectural divide at center.",
+    "lighting": {
+      "type": "mixed",
+      "direction": "split",
+      "left_half": "cold flat overhead fluorescent lighting — pale, even, institutional, no shadows, no warmth",
+      "right_half": "warm natural sunlight streaming in from large windows on the right wall — golden, directional, alive"
+    },
+    "background_elements_left": [
+      "rows of identical fixed individual desks with hard plastic chairs attached",
+      "institutional beige or gray walls",
+      "cold overhead fluorescent tube lighting",
+      "chalkboard or whiteboard at the front — empty",
+      "no windows visible on the left side",
+      "uniform desk spacing communicating control and sameness",
+      "no materials on desk surfaces — empty, waiting"
+    ],
+    "background_elements_right": [
+      "modern flexible collaborative tables with rounded edges in warm wood tone",
+      "upholstered moveable chairs in muted blues and greens",
+      "large floor-to-ceiling windows flooding the right side with warm natural light",
+      "project materials — paper, markers, small models — on the table surface",
+      "open sightlines suggesting a larger purposeful space beyond",
+      "warm wood flooring, clean architectural ceiling elements"
+    ],
+    "dividing_element": "A prominent vertical architectural transition at the exact horizontal center of the square frame — ideally a structural column, a wall edge, or a sharp lighting temperature shift from cold fluorescent on the left to warm natural light on the right. The divide must be strong and clear — in a square format each half is a narrow column, so the separation needs to read immediately."
+  },
+  "technical": {
+    "camera_model": "Nikon Z 8",
+    "lens": "50mm",
+    "aperture": "f/4.0",
+    "iso": "400",
+    "film_stock": "Kodak Portra 400"
+  },
+  "composition": {
+    "framing": "medium_shot",
+    "angle": "eye_level",
+    "focus_point": "whole_scene",
+    "layout": "split_frame_vertical",
+    "format_note": "Square 1:1 format — each half of the split is a narrow vertical column. Use medium_shot framing (waist up) rather than full_body so subjects remain legible within the tighter crop. The architectural divide at center must be visually prominent to clearly separate the two halves.",
+    "left_half_content": "Traditional institutional classroom — rows, fixed desks, cold fluorescent light, passive students (medium shot, waist up). Occupies left 50% of square frame.",
+    "right_half_content": "Modern flexible learning environment — natural light, flexible furniture, same students now active and engaged (medium shot, waist up). Occupies right 50% of square frame.",
+    "logo_safe_zone": {
+      "region": "bottom_left",
+      "width_percent": 25,
+      "height_percent": 35,
+      "instruction": "This region falls on the traditional/institutional side of the split frame. Keep student bodies and faces clear of this corner — empty desk surface or institutional floor is acceptable here. Kay-Twelve logo badge overlay applied in post-processing."
+    }
+  },
+  "advanced": {
+    "negative_prompt": [
+      "clutter", "storage overflowing", "tape on floor", "water bottles",
+      "trash can", "fan", "paper piles", "boxes",
+      "posed smile at camera", "looking at camera", "smiling at camera",
+      "low quality", "grainy", "blurry", "blur", "noise", "grain",
+      "watermark", "text", "logo", "bad hands", "extra fingers", "mutated",
+      "flash photography", "harsh lighting", "studio lighting",
+      "product photography", "worst quality", "distorted",
+      "primary subject in bottom left corner", "face in bottom left corner",
+      "focal point in bottom left", "student face in bottom left",
+      "subjects all on one side", "uniform environment across entire frame",
+      "modern furniture on both sides", "natural light on both sides",
+      "students active on left side", "students passive on right side",
+      "full body shot", "feet visible", "wide establishing shot"
+    ],
+    "_note": "Negative prompts intentionally omit 'artificial light', 'sterile', and 'catalog style' — the left half intentionally uses fluorescent light and institutional sterility as a visual contrast device. Added 'full body shot' and 'feet visible' to reinforce medium_shot framing appropriate for the tighter 1:1 crop.",
+    "hdr_mode": true,
+    "magic_prompt_enhancer": false
+  }
+}

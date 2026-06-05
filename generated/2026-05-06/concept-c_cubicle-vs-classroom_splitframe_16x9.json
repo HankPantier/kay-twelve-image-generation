@@ -1,0 +1,108 @@
+{
+  "user_intent": "A single wide split-frame image drawing a direct visual parallel between an adult's work environment and a child's learning environment — making the argument that we would never accept for ourselves what we routinely accept for students. Left half: an adult professional in a gray corporate cubicle — fixed chair, gray fabric walls, fluorescent overhead light, isolated, uninspired. Right half: exactly the same camera framing and scale, but an elementary school student at a modern flexible learning space — warm natural light, moveable furniture, engaged and curious. Same human dignity. Completely different environments. The image asks one question without words: why?",
+  "meta": {
+    "aspect_ratio": "16:9",
+    "quality": "ultra_photorealistic"
+  },
+  "subject": [
+    {
+      "id": "adult_worker",
+      "type": "person",
+      "description": "Adult professional, approximately 35-40 years old, gender-neutral presentation — could read as any adult school administrator or office worker. Wearing a plain button-down shirt in muted gray-blue. Seated in a standard fixed office chair with no flexibility, in a gray fabric cubicle with low walls. Slightly slumped posture, elbow on desk, one hand resting near a keyboard or on the desk surface. Expression tired, distracted, enduring. Eyes looking slightly downward or forward at nothing engaging. The body language communicates constraint, not productivity.",
+      "age": "35-40 years old",
+      "gender": "neutral",
+      "hair": { "style": "short", "color": "dark_brown" },
+      "position": "left",
+      "pose": "seated in fixed office chair inside gray fabric cubicle walls, one elbow on desk surface, slight slouch, looking forward or slightly downward, not engaged with any task — the posture of someone enduring their environment rather than thriving in it",
+      "expression": "neutral",
+      "clothing": [
+        { "item": "button-down shirt", "color": "muted gray-blue", "fabric": "cotton", "fit": "regular", "layer": "outer" }
+      ]
+    },
+    {
+      "id": "student",
+      "type": "person",
+      "description": "Elementary school student, approximately 10 years old, Latina girl with dark hair in a loose braid, wearing a warm coral long-sleeve shirt and dark pants. Seated at a modern flexible school table — same camera framing and scale as the adult on the left, but the environment around her is completely alive. Leaning slightly forward, both hands resting on or near project materials, head tilted with curiosity, expression engaged and present. Her body language communicates possibility, not endurance.",
+      "age": "10 years old",
+      "gender": "female",
+      "hair": { "style": "loose_braid", "color": "dark_brown" },
+      "position": "right",
+      "pose": "seated at a modern flexible school table, leaning slightly forward, both hands near project materials on the surface, head tilted with curiosity, body open and engaged — the posture of someone whose environment invites participation",
+      "expression": "engaged",
+      "clothing": [
+        { "item": "long-sleeve shirt", "color": "warm coral", "fabric": "cotton", "fit": "regular", "layer": "outer" },
+        { "item": "pants", "color": "dark navy", "fabric": "cotton", "fit": "regular", "layer": "outer" }
+      ]
+    }
+  ],
+  "scene": {
+    "location": "Two adjacent environments occupying a single wide frame — a corporate office cubicle on the left and a modern elementary school learning space on the right — shot at the same eye level, same scale, same framing, to make the parallel unavoidable.",
+    "lighting": {
+      "type": "mixed",
+      "left_half": "cold overhead fluorescent office lighting — flat, even, pallid, no warmth or directionality. The light that makes time feel slow.",
+      "right_half": "warm natural sunlight from large windows — directional, golden, alive. The light that makes time feel purposeful."
+    },
+    "background_elements_left": [
+      "standard gray fabric cubicle walls, low partition height",
+      "basic fixed-height desk surface with no personalization",
+      "standard corporate office chair with no flexibility or adjustment",
+      "overhead fluorescent tube lighting — cold and flat",
+      "no windows visible",
+      "generic computer monitor or keyboard on desk surface",
+      "muted gray and beige color palette throughout",
+      "identical cubicles visible in background, suggesting sameness and scale",
+      "no plants, no color, no warmth — purely functional and constraining"
+    ],
+    "background_elements_right": [
+      "modern flexible school table with warm wood tone surface",
+      "moveable upholstered chair in a muted teal or blue",
+      "large windows on the right wall with warm natural light streaming in",
+      "project materials — paper, markers, small model pieces — on the table surface",
+      "open, warm learning environment visible in background",
+      "warm wood flooring, clean ceiling, sense of spatial possibility",
+      "subtle color in furniture and environment — alive, not institutional"
+    ],
+    "dividing_element": "A clean vertical divide at the center of the frame — ideally a wall edge, a column, or a sharp lighting temperature shift from cold fluorescent left to warm natural right. The divide is structural and intentional, not soft or gradual."
+  },
+  "technical": {
+    "camera_model": "Nikon Z 8",
+    "lens": "50mm",
+    "aperture": "f/2.8",
+    "iso": "400",
+    "film_stock": "Kodak Portra 400"
+  },
+  "composition": {
+    "framing": "medium_shot",
+    "angle": "eye_level",
+    "focus_point": "whole_scene",
+    "layout": "split_frame_vertical",
+    "framing_note": "Both subjects should be framed identically — same distance from camera, same height in frame, same relationship to their work surface. The parallel framing IS the argument. The only difference is the environment around them.",
+    "left_half_content": "Adult in corporate cubicle — gray, fixed, fluorescent, isolated. Occupies left 50% of frame.",
+    "right_half_content": "Elementary student at flexible school table — warm, open, natural light, engaged. Occupies right 50% of frame.",
+    "logo_safe_zone": {
+      "region": "bottom_left",
+      "width_percent": 25,
+      "height_percent": 35,
+      "instruction": "This region falls within the corporate cubicle side of the split frame. Keep human subjects and faces clear of this corner — gray cubicle wall, desk surface, or office floor is acceptable here. Kay-Twelve logo badge overlay applied in post-processing."
+    }
+  },
+  "advanced": {
+    "negative_prompt": [
+      "clutter", "trash on floor", "water bottles visible", "paper piles on desk",
+      "posed smile at camera", "looking at camera", "smiling at camera",
+      "low quality", "grainy", "blurry", "blur", "noise", "grain",
+      "watermark", "text", "logo", "bad hands", "extra fingers", "mutated",
+      "flash photography", "harsh lighting",
+      "product photography", "worst quality", "distorted",
+      "primary subject in bottom left corner", "face in bottom left corner",
+      "focal point in bottom left", "student face in bottom left",
+      "modern furniture on both sides", "natural light on both sides",
+      "cubicle on right side", "school environment on left side",
+      "student on left side", "adult on right side",
+      "both subjects equally engaged", "both environments equally warm"
+    ],
+    "_note": "Negative prompts intentionally omit 'artificial light', 'sterile', and 'studio lighting' — the left cubicle half requires fluorescent light, institutional sterility, and corporate constraint as deliberate visual contrast elements.",
+    "hdr_mode": true,
+    "magic_prompt_enhancer": false
+  }
+}

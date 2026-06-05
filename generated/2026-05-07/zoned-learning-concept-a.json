@@ -1,0 +1,153 @@
+{
+  "user_intent": "A single wide-angle architectural shot of a modern Kay-Twelve learning space showing all three RSC zones simultaneously — high-energy collaboration (left), transition zone (center), and low-energy focus (right). Editorial, ultra-clean, bright natural light. No clutter.",
+
+  "meta": {
+    "aspect_ratio": "16:9",
+    "quality": "ultra_photorealistic",
+    "safety_filter": "block_some",
+    "steps": 60,
+    "guidance_scale": 9.0
+  },
+
+  "subject": [
+    {
+      "id": "high_energy_student_1",
+      "type": "person",
+      "description": "elementary school student, standing at a tall collaborative table, leaning forward with both hands on the surface, engaged and animated, pointing at a project spread across the table",
+      "age": "10 years old",
+      "gender": "female",
+      "hair": { "style": "ponytail", "color": "dark_brown" },
+      "clothing": [
+        { "item": "t-shirt", "color": "coral orange", "fabric": "cotton", "fit": "regular" },
+        { "item": "jeans", "color": "medium blue", "fabric": "denim", "fit": "slim" }
+      ],
+      "position": "far_left",
+      "pose": "standing, leaning forward over table, one hand pointing at project materials",
+      "expression": "smiling"
+    },
+    {
+      "id": "high_energy_student_2",
+      "type": "person",
+      "description": "elementary school student, standing across the same tall collaborative table, holding a marker, gesturing mid-explanation to a peer",
+      "age": "11 years old",
+      "gender": "male",
+      "hair": { "style": "textured_crop", "color": "jet_black" },
+      "clothing": [
+        { "item": "hoodie", "color": "heather grey", "fabric": "fleece", "fit": "regular" },
+        { "item": "jogger pants", "color": "navy blue", "fabric": "cotton", "fit": "slim" }
+      ],
+      "position": "far_left",
+      "pose": "standing, holding marker up, mid-gesture as if explaining an idea",
+      "expression": "laughing"
+    },
+    {
+      "id": "transition_student",
+      "type": "person",
+      "description": "elementary school student, walking through the center of the room, pushing a lightweight mobile chair with both hands, transitioning between zones",
+      "age": "10 years old",
+      "gender": "male",
+      "hair": { "style": "fade_low", "color": "auburn" },
+      "clothing": [
+        { "item": "polo shirt", "color": "forest green", "fabric": "cotton", "fit": "regular" },
+        { "item": "chinos", "color": "khaki", "fabric": "cotton", "fit": "slim" }
+      ],
+      "position": "center",
+      "pose": "walking, both hands gripping a lightweight mobile chair, pushing it toward the right side of the room",
+      "expression": "neutral"
+    },
+    {
+      "id": "low_energy_student_1",
+      "type": "person",
+      "description": "elementary school student, seated in a low soft accent chair, reading a book, fully absorbed, legs tucked slightly",
+      "age": "9 years old",
+      "gender": "female",
+      "hair": { "style": "long_straight", "color": "golden_blonde" },
+      "clothing": [
+        { "item": "cardigan", "color": "dusty rose", "fabric": "wool", "fit": "loose" },
+        { "item": "leggings", "color": "charcoal grey", "fabric": "spandex", "fit": "slim" }
+      ],
+      "position": "right",
+      "pose": "seated deeply in soft chair, knees slightly bent, holding a book open with both hands, eyes down reading",
+      "expression": "neutral"
+    },
+    {
+      "id": "low_energy_student_2",
+      "type": "person",
+      "description": "elementary school student, seated cross-legged on a low padded floor cushion near a bookshelf, writing in a notebook, head tilted in concentration",
+      "age": "10 years old",
+      "gender": "female",
+      "hair": { "style": "box_braids", "color": "jet_black" },
+      "clothing": [
+        { "item": "long sleeve shirt", "color": "sky blue", "fabric": "cotton", "fit": "regular" },
+        { "item": "jogger pants", "color": "olive green", "fabric": "cotton", "fit": "loose" }
+      ],
+      "position": "far_right",
+      "pose": "seated cross-legged on floor cushion, leaning slightly forward over a notebook, pencil in hand, writing",
+      "expression": "neutral"
+    }
+  ],
+
+  "scene": {
+    "location": "modern open-plan elementary school learning environment with clearly defined spatial zones: LEFT ZONE has tall standing-height collaborative tables with stools, scattered project materials, a whiteboard wall with student work. CENTER ZONE is an open transitional corridor with lightweight mobile chairs and small tables on casters. RIGHT ZONE has low soft seating chairs and floor cushions arranged near a low bookshelf filled with books. The room has polished concrete floors, floor-to-ceiling windows along one wall, white walls with colorful linear accent graphics, and recessed LED lighting supplemented by abundant natural daylight.",
+    "time": "high_noon",
+    "weather": "clear_skies",
+    "lighting": {
+      "type": "natural_sunlight",
+      "direction": "side_lit"
+    },
+    "background_elements": [
+      "floor-to-ceiling windows with natural light streaming in",
+      "white walls with colorful vertical stripe accent wall graphic",
+      "low open bookshelves on the right side",
+      "whiteboard wall on the far left with student project sketches",
+      "recessed ceiling lights supplementing natural light",
+      "clean polished concrete floor that reflects light",
+      "no visual clutter, no traditional teacher's desk at front, no rows of identical desks"
+    ]
+  },
+
+  "technical": {
+    "camera_model": "Canon EOS R5",
+    "lens": "24mm",
+    "aperture": "f/5.6",
+    "shutter_speed": "1/250",
+    "iso": "200",
+    "film_stock": "Kodak Portra 400"
+  },
+
+  "composition": {
+    "framing": "wide_shot",
+    "angle": "high_angle",
+    "focus_point": "whole_scene"
+  },
+
+  "style_modifiers": {
+    "medium": "photography",
+    "aesthetic": ["minimalist"]
+  },
+
+  "advanced": {
+    "negative_prompt": [
+      "traditional rows of identical desks",
+      "teacher standing at front of room",
+      "chalkboard",
+      "cluttered walls covered in paper",
+      "dim fluorescent lighting",
+      "old school furniture",
+      "plastic stacking chairs in rows",
+      "busy bulletin boards",
+      "low quality",
+      "blur",
+      "distortion",
+      "watermark",
+      "bad hands",
+      "extra fingers",
+      "cropped",
+      "worst quality",
+      "cartoon",
+      "illustration"
+    ],
+    "magic_prompt_enhancer": true,
+    "hdr_mode": true
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "user_intent": "A single wide-angle editorial photo of a modern Kay-Twelve learning space showing all three RSC zones — high-energy collaboration (left), transition (center), low-energy focus (right). Racially diverse students. Bold saturated furniture: yellow tables, lime green stools, cobalt blue mobile chair, teal lounge seating. Authentic, candid feel — not a staged stock photo.",
+
+  "meta": {
+    "aspect_ratio": "16:9",
+    "quality": "ultra_photorealistic",
+    "safety_filter": "block_some",
+    "steps": 65,
+    "guidance_scale": 11.0
+  },
+
+  "subject": [
+    {
+      "id": "high_energy_student_1",
+      "type": "person",
+      "description": "Hispanic elementary school girl with medium brown skin, dark brown eyes, standing at a tall collaborative table with a bright yellow laminate top, laughing and pointing at a project spread across the surface. Candid, natural moment — not posed.",
+      "age": "10 years old",
+      "gender": "female",
+      "hair": { "style": "ponytail", "color": "jet_black" },
+      "clothing": [
+        { "item": "t-shirt", "color": "coral orange", "fabric": "cotton", "fit": "regular" },
+        { "item": "jeans", "color": "medium blue", "fabric": "denim", "fit": "slim" }
+      ],
+      "position": "far_left",
+      "pose": "standing, leaning forward over bright yellow table, one hand pointing animatedly at project",
+      "expression": "laughing"
+    },
+    {
+      "id": "high_energy_student_2",
+      "type": "person",
+      "description": "Black elementary school boy with dark brown skin, natural short hair, standing at the same bright yellow table writing on it with a marker, focused and engaged. Candid moment.",
+      "age": "11 years old",
+      "gender": "male",
+      "hair": { "style": "short_afro", "color": "jet_black" },
+      "clothing": [
+        { "item": "hoodie", "color": "heather grey", "fabric": "fleece", "fit": "regular" },
+        { "item": "jogger pants", "color": "navy blue", "fabric": "cotton", "fit": "slim" }
+      ],
+      "position": "far_left",
+      "pose": "standing at tall yellow table, holding marker, writing directly on the white writeable table surface, slightly hunched forward",
+      "expression": "neutral"
+    },
+    {
+      "id": "transition_student",
+      "type": "person",
+      "description": "White elementary school boy with light skin, reddish-brown hair, walking confidently through the open center of the room pushing a cobalt blue chair on casters. Mid-stride, relaxed.",
+      "age": "10 years old",
+      "gender": "male",
+      "hair": { "style": "crew_cut", "color": "auburn" },
+      "clothing": [
+        { "item": "polo shirt", "color": "forest green", "fabric": "cotton", "fit": "regular" },
+        { "item": "chinos", "color": "khaki", "fabric": "cotton", "fit": "slim" }
+      ],
+      "position": "center",
+      "pose": "mid-stride walking, both hands gripping the back of a cobalt blue chair on casters, rolling it across the open floor",
+      "expression": "neutral"
+    },
+    {
+      "id": "low_energy_student_1",
+      "type": "person",
+      "description": "Asian elementary school girl with light tan skin, straight black hair worn loose, seated deeply in a large teal upholstered bean bag lounge chair, reading a picture book. Absorbed, relaxed posture.",
+      "age": "9 years old",
+      "gender": "female",
+      "hair": { "style": "long_straight", "color": "jet_black" },
+      "clothing": [
+        { "item": "cardigan", "color": "dusty rose", "fabric": "wool", "fit": "loose" },
+        { "item": "leggings", "color": "charcoal grey", "fabric": "spandex", "fit": "slim" }
+      ],
+      "position": "right",
+      "pose": "sunk deep into large teal lounge chair, legs slightly curled, holding an open picture book, eyes cast down reading",
+      "expression": "neutral"
+    },
+    {
+      "id": "low_energy_student_2",
+      "type": "person",
+      "description": "Black elementary school girl with dark brown skin, long box braids, seated cross-legged on a large lime green floor cushion near a bookshelf, writing in a composition notebook. Focused, natural.",
+      "age": "10 years old",
+      "gender": "female",
+      "hair": { "style": "box_braids", "color": "jet_black" },
+      "clothing": [
+        { "item": "long sleeve shirt", "color": "sky blue", "fabric": "cotton", "fit": "regular" },
+        { "item": "jogger pants", "color": "olive green", "fabric": "cotton", "fit": "loose" }
+      ],
+      "position": "far_right",
+      "pose": "seated cross-legged on lime green floor cushion, notebook open on lap, pencil in hand, writing",
+      "expression": "neutral"
+    }
+  ],
+
+  "scene": {
+    "location": "Modern open-plan elementary school learning environment, three clearly distinct zones in one wide frame. LEFT HIGH-ENERGY ZONE: two tall standing-height collaborative tables with BRIGHT YELLOW writeable laminate tops on white metal frames, surrounded by LIME GREEN upholstered tall bar stools; a large whiteboard wall panel with authentic student drawings, diagrams, and handwriting in marker. CENTER TRANSITION ZONE: wide open polished concrete corridor, a COBALT BLUE lightweight mobile chair on casters being pushed across the floor. RIGHT LOW-ENERGY ZONE: a large TEAL bean bag lounge chair, LIME GREEN oversized floor cushions, a low natural wood open bookshelf stocked with colorful children's books. Walls are white with thin, narrow, architectural accent stripe lines in teal and yellow near the ceiling — subtle and designed, NOT a thick rainbow band, just two or three thin elegant horizontal accent lines like an architectural detail. Large windows along the right wall. Polished concrete floors throughout. The overall palette is bold and vibrant — teal, lime green, cobalt blue, yellow — not grey, not beige, not neutral.",
+    "time": "high_noon",
+    "weather": "clear_skies",
+    "lighting": {
+      "type": "natural_sunlight",
+      "direction": "side_lit"
+    },
+    "background_elements": [
+      "bright yellow writeable laminate table tops in the left zone",
+      "lime green upholstered tall bar stools around yellow tables",
+      "large whiteboard wall panel with authentic student handwriting and diagrams",
+      "cobalt blue mobile chair on casters in center corridor",
+      "teal large bean bag lounge chair in right zone",
+      "lime green oversized floor cushions in right zone",
+      "low natural wood open bookshelf with colorful books on far right",
+      "large windows with natural light streaming in from the right",
+      "two or three thin narrow horizontal accent stripe lines in teal and yellow near ceiling — architectural, not decorative rainbow",
+      "polished concrete floor reflecting natural light"
+    ]
+  },
+
+  "technical": {
+    "camera_model": "Canon EOS R5",
+    "lens": "24mm",
+    "aperture": "f/5.6",
+    "shutter_speed": "1/250",
+    "iso": "100",
+    "film_stock": "Fujifilm Velvia 50"
+  },
+
+  "composition": {
+    "framing": "wide_shot",
+    "angle": "high_angle",
+    "focus_point": "whole_scene"
+  },
+
+  "style_modifiers": {
+    "medium": "photography",
+    "aesthetic": ["minimalist"],
+    "artist_reference": ["Iwan Baan", "architectural editorial photography"]
+  },
+
+  "advanced": {
+    "negative_prompt": [
+      "all white students",
+      "no diversity",
+      "stock photo",
+      "staged",
+      "overly posed",
+      "thick rainbow stripe on wall",
+      "cartoon rainbow band",
+      "decorative rainbow",
+      "grey metal furniture",
+      "beige furniture",
+      "neutral colored chairs",
+      "muted colors",
+      "desaturated",
+      "washed out",
+      "grey stools",
+      "silver chairs",
+      "traditional rows of desks",
+      "chalkboard",
+      "cluttered walls",
+      "dim lighting",
+      "low quality",
+      "blur",
+      "distortion",
+      "watermark",
+      "bad hands",
+      "extra fingers",
+      "cropped",
+      "worst quality",
+      "cartoon",
+      "illustration"
+    ],
+    "magic_prompt_enhancer": true,
+    "hdr_mode": true
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "user_intent": "Three diverse elementary school students collaborating on a project at a flexible table in a transformed modern learning environment — subjects positioned left of frame, right side open showing large windows and natural light, to allow for letter overlay in post-production via Pencil",
+  "meta": {
+    "aspect_ratio": "16:9",
+    "quality": "ultra_photorealistic"
+  },
+  "subject": [
+    {
+      "id": "student_1",
+      "type": "person",
+      "description": "Elementary school student, approximately 9 years old, Black girl with natural hair in two puffs, wearing a bright teal crew neck sweatshirt and navy pants, leaning forward over the table with hands actively engaged in project materials",
+      "age": "9 years old",
+      "gender": "female",
+      "hair": {
+        "style": "two_puffs",
+        "color": "dark_brown"
+      },
+      "position": "far_left",
+      "pose": "leaning forward over table, both hands working with project materials spread on the surface, looking down at work",
+      "expression": "engaged",
+      "clothing": [
+        {
+          "item": "crew neck sweatshirt",
+          "color": "teal",
+          "fabric": "cotton",
+          "fit": "regular",
+          "layer": "outer"
+        },
+        {
+          "item": "pants",
+          "color": "navy",
+          "fabric": "cotton",
+          "fit": "regular",
+          "layer": "outer"
+        }
+      ]
+    },
+    {
+      "id": "student_2",
+      "type": "person",
+      "description": "Elementary school student, approximately 10 years old, white boy with short light brown hair, wearing a heather gray hoodie and medium-wash jeans, sitting upright and pointing at something on the table while talking to classmates",
+      "age": "10 years old",
+      "gender": "male",
+      "hair": {
+        "style": "short_side_part",
+        "color": "light_brown"
+      },
+      "position": "left_center",
+      "pose": "sitting at table, one hand pointing at project materials on the surface, turned slightly toward student_1, mouth slightly open mid-conversation",
+      "expression": "engaged",
+      "clothing": [
+        {
+          "item": "hoodie",
+          "color": "heather gray",
+          "fabric": "cotton fleece",
+          "fit": "regular",
+          "layer": "outer"
+        },
+        {
+          "item": "jeans",
+          "color": "medium wash blue",
+          "fabric": "denim",
+          "fit": "regular",
+          "layer": "outer"
+        }
+      ]
+    },
+    {
+      "id": "student_3",
+      "type": "person",
+      "description": "Elementary school student, approximately 9 years old, Latina girl with dark hair pulled back in a low ponytail, wearing a soft yellow long-sleeve shirt and olive cargo pants, seated at the table writing or sketching on paper with a pencil",
+      "age": "9 years old",
+      "gender": "female",
+      "hair": {
+        "style": "low_ponytail",
+        "color": "dark_brown"
+      },
+      "position": "left",
+      "pose": "seated at table, pencil in hand, leaning slightly forward and writing or sketching on paper, focused down on work",
+      "expression": "engaged",
+      "clothing": [
+        {
+          "item": "long-sleeve shirt",
+          "color": "soft yellow",
+          "fabric": "cotton",
+          "fit": "regular",
+          "layer": "outer"
+        },
+        {
+          "item": "cargo pants",
+          "color": "olive",
+          "fabric": "cotton",
+          "fit": "regular",
+          "layer": "outer"
+        }
+      ]
+    }
+  ],
+  "scene": {
+    "location": "Modern transformed elementary school learning commons — flexible collaborative tables and upholstered chairs, large floor-to-ceiling windows on the right side flooding the space with warm natural light, warm wood tones in furniture and flooring, clean architectural ceiling elements, open sightlines to the broader learning environment",
+    "lighting": {
+      "type": "natural_sunlight",
+      "direction": "side_lit_right"
+    },
+    "background_elements": [
+      "large floor-to-ceiling windows on the right side with warm natural light streaming in",
+      "modern flexible collaborative tables with rounded edges in warm wood tone",
+      "colorful upholstered chairs in muted blues and greens",
+      "open sightlines to rest of learning commons in background",
+      "warm wood flooring with subtle geometric area rug",
+      "clean white walls with minimal architectural detail",
+      "geometric acoustic ceiling baffles in warm neutral tones",
+      "soft blurred students visible in background suggesting active learning community",
+      "project materials — paper, markers, small models — spread on the table surface"
+    ]
+  },
+  "technical": {
+    "camera_model": "Nikon Z 8",
+    "lens": "50mm",
+    "aperture": "f/2.8",
+    "iso": "400",
+    "film_stock": "Kodak Portra 400"
+  },
+  "composition": {
+    "framing": "full_body",
+    "angle": "eye_level",
+    "focus_point": "whole_scene",
+    "subject_placement": "left_weighted",
+    "frame_balance": "Primary subjects clustered in the left 45% of frame. Right 55% is open environment — large windows, warm natural light, softly blurred background space — reserved for letter document overlay in post-production via Pencil.",
+    "logo_safe_zone": {
+      "region": "bottom_left",
+      "width_percent": 25,
+      "height_percent": 35,
+      "instruction": "Keep all primary subjects, faces, and focal content clear of this region. The Kay-Twelve logo badge overlay is applied here in post-processing."
+    }
+  },
+  "advanced": {
+    "negative_prompt": [
+      "clutter", "storage overflowing", "tape on floor", "water bottles",
+      "trash can", "fan", "paper piles", "boxes", "worn furniture",
+      "posed smile at camera", "looking at camera", "smiling at camera",
+      "low quality", "grainy", "blurry", "blur", "noise", "grain",
+      "watermark", "text", "logo", "bad hands", "extra fingers", "mutated",
+      "flash photography", "harsh lighting", "studio lighting", "artificial light",
+      "catalog style", "sterile", "empty showroom", "product photography",
+      "cropped", "worst quality", "distorted",
+      "primary subject in bottom left corner", "face in bottom left corner",
+      "focal point in bottom left", "key action in bottom left quadrant",
+      "student face in bottom left", "hands in bottom left corner",
+      "subjects centered in frame", "subjects on right side of frame",
+      "busy right background", "cluttered right side", "dark right side"
+    ],
+    "hdr_mode": true,
+    "magic_prompt_enhancer": false
+  }
+}

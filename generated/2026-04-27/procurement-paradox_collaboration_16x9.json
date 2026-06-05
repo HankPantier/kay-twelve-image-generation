@@ -1,0 +1,135 @@
+{
+  "user_intent": "16:9 email header for 'The Procurement Paradox' — showing what aligned procurement enables: students collaborating in a purposeful, intentionally designed learning environment",
+  "meta": {
+    "aspect_ratio": "16:9",
+    "quality": "ultra_photorealistic",
+    "steps": 50,
+    "guidance_scale": 8.5
+  },
+  "subject": [
+    {
+      "id": "student_1",
+      "type": "person",
+      "description": "teenage girl, approximately 16 years old, dark hair pulled back loosely, leaning forward over a work surface, pointing at a document or project spread out on the table",
+      "age": "16",
+      "gender": "female",
+      "hair": {
+        "style": "low_ponytail",
+        "color": "dark_brown"
+      },
+      "clothing": [
+        {
+          "item": "fitted crewneck sweatshirt",
+          "color": "slate blue",
+          "fabric": "cotton",
+          "pattern": "solid",
+          "fit": "regular",
+          "layer": "outer"
+        }
+      ],
+      "position": "left",
+      "pose": "leaning forward over table, one hand pointing at work surface, engaged in conversation",
+      "expression": "neutral"
+    },
+    {
+      "id": "student_2",
+      "type": "person",
+      "description": "teenage boy, approximately 15 years old, medium build, sitting slightly back from the table, listening and nodding, holding a marker in one hand",
+      "age": "15",
+      "gender": "male",
+      "hair": {
+        "style": "textured_crop",
+        "color": "soft_black"
+      },
+      "clothing": [
+        {
+          "item": "casual button-down shirt",
+          "color": "warm white",
+          "fabric": "linen",
+          "pattern": "solid",
+          "fit": "regular",
+          "layer": "outer"
+        }
+      ],
+      "position": "center",
+      "pose": "seated, leaning slightly back, looking toward student_1, marker in hand",
+      "expression": "neutral"
+    },
+    {
+      "id": "student_3",
+      "type": "person",
+      "description": "teenage girl, approximately 16 years old, natural curly hair, writing notes on a whiteboard surface at the table edge",
+      "age": "16",
+      "gender": "female",
+      "hair": {
+        "style": "large_afro",
+        "color": "soft_black"
+      },
+      "clothing": [
+        {
+          "item": "graphic tee",
+          "color": "forest green",
+          "fabric": "cotton",
+          "pattern": "solid",
+          "fit": "loose",
+          "layer": "outer"
+        }
+      ],
+      "position": "right",
+      "pose": "writing on writable surface at the edge of the table, focused downward on work",
+      "expression": "neutral"
+    }
+  ],
+  "scene": {
+    "location": "modern open learning commons with flexible furniture, large windows, and intentional spatial design — a collaborative classroom that reads as purposefully designed, not incidental",
+    "time": "golden_hour",
+    "weather": "clear_skies",
+    "lighting": {
+      "type": "natural_sunlight",
+      "direction": "front_lit"
+    },
+    "background_elements": [
+      "large floor-to-ceiling windows with soft natural light streaming in",
+      "flexible modular seating and writable table surfaces visible",
+      "open sightlines to rest of learning commons in background",
+      "warm wood tones in furniture and architectural details",
+      "soft blurred students in background suggesting a larger active community",
+      "clean walls with subtle architectural interest — no posters or visual clutter"
+    ]
+  },
+  "technical": {
+    "camera_model": "Nikon Z 8",
+    "lens": "50mm",
+    "aperture": "f/2.8",
+    "iso": "400",
+    "film_stock": "Kodak Portra 400"
+  },
+  "composition": {
+    "framing": "full_body",
+    "angle": "eye_level",
+    "focus_point": "whole_scene",
+    "logo_safe_zone": {
+      "region": "bottom_left",
+      "width_percent": 25,
+      "height_percent": 35,
+      "instruction": "Keep all primary subjects, faces, and focal content clear of this region. The Kay-Twelve logo badge overlay is applied here in post-processing."
+    }
+  },
+  "advanced": {
+    "negative_prompt": [
+      "clutter", "storage overflowing", "tape on floor", "water bottles",
+      "trash can", "fan", "paper piles", "boxes", "worn furniture",
+      "posed smile at camera", "looking at camera", "smiling at camera",
+      "low quality", "grainy", "blurry", "blur", "noise", "grain",
+      "watermark", "text", "logo", "bad hands", "extra fingers", "mutated",
+      "flash photography", "harsh lighting", "studio lighting", "artificial light",
+      "catalog style", "sterile", "empty showroom", "product photography",
+      "cropped", "worst quality", "distorted",
+      "primary subject in bottom left corner", "face in bottom left corner",
+      "focal point in bottom left", "key action in bottom left quadrant",
+      "student face in bottom left", "hands in bottom left corner"
+    ],
+    "hdr_mode": true,
+    "magic_prompt_enhancer": false
+  }
+}

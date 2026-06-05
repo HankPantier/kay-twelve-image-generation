@@ -1,0 +1,161 @@
+{
+  "user_intent": "A single wide-angle architectural shot of a modern Kay-Twelve learning space showing all three RSC zones — high-energy collaboration (left), transition (center), low-energy focus (right). The space must feature BOLD, SATURATED furniture colors: teal, lime green, cobalt blue, yellow. Editorial, clean, bright natural light. No grey metal, no neutral beige.",
+
+  "meta": {
+    "aspect_ratio": "16:9",
+    "quality": "ultra_photorealistic",
+    "safety_filter": "block_some",
+    "steps": 65,
+    "guidance_scale": 11.0
+  },
+
+  "subject": [
+    {
+      "id": "high_energy_student_1",
+      "type": "person",
+      "description": "elementary school student, standing at a tall collaborative table with a bright yellow laminate top, leaning forward engaged in a project, pointing at drawings spread across the table surface",
+      "age": "10 years old",
+      "gender": "female",
+      "hair": { "style": "ponytail", "color": "dark_brown" },
+      "clothing": [
+        { "item": "t-shirt", "color": "coral orange", "fabric": "cotton", "fit": "regular" },
+        { "item": "jeans", "color": "medium blue", "fabric": "denim", "fit": "slim" }
+      ],
+      "position": "far_left",
+      "pose": "standing, leaning forward over bright yellow-topped table, one hand pointing at project materials",
+      "expression": "smiling"
+    },
+    {
+      "id": "high_energy_student_2",
+      "type": "person",
+      "description": "elementary school student, standing at the same bright yellow-topped tall collaborative table, holding a marker, mid-gesture explaining an idea to their peer. Perched on a tall lime green upholstered stool.",
+      "age": "11 years old",
+      "gender": "male",
+      "hair": { "style": "textured_crop", "color": "jet_black" },
+      "clothing": [
+        { "item": "hoodie", "color": "heather grey", "fabric": "fleece", "fit": "regular" },
+        { "item": "jogger pants", "color": "navy blue", "fabric": "cotton", "fit": "slim" }
+      ],
+      "position": "far_left",
+      "pose": "standing at tall table, holding marker up mid-gesture, seated on lime green tall stool",
+      "expression": "laughing"
+    },
+    {
+      "id": "transition_student",
+      "type": "person",
+      "description": "elementary school student walking through the open center of the room, rolling a lightweight cobalt blue mobile chair on casters across the polished concrete floor",
+      "age": "10 years old",
+      "gender": "male",
+      "hair": { "style": "fade_low", "color": "auburn" },
+      "clothing": [
+        { "item": "polo shirt", "color": "forest green", "fabric": "cotton", "fit": "regular" },
+        { "item": "chinos", "color": "khaki", "fabric": "cotton", "fit": "slim" }
+      ],
+      "position": "center",
+      "pose": "walking, both hands gripping a cobalt blue mobile chair on wheels, rolling it across the open floor toward the right",
+      "expression": "neutral"
+    },
+    {
+      "id": "low_energy_student_1",
+      "type": "person",
+      "description": "elementary school student seated deeply in a large teal upholstered soft lounge chair, reading a book, fully absorbed, legs tucked slightly to the side",
+      "age": "9 years old",
+      "gender": "female",
+      "hair": { "style": "long_straight", "color": "golden_blonde" },
+      "clothing": [
+        { "item": "cardigan", "color": "dusty rose", "fabric": "wool", "fit": "loose" },
+        { "item": "leggings", "color": "charcoal grey", "fabric": "spandex", "fit": "slim" }
+      ],
+      "position": "right",
+      "pose": "seated deeply in large teal lounge chair, knees bent, holding open book with both hands, eyes down reading",
+      "expression": "neutral"
+    },
+    {
+      "id": "low_energy_student_2",
+      "type": "person",
+      "description": "elementary school student seated cross-legged on a large lime green floor cushion near a low open bookshelf, writing in a notebook with focused concentration",
+      "age": "10 years old",
+      "gender": "female",
+      "hair": { "style": "box_braids", "color": "jet_black" },
+      "clothing": [
+        { "item": "long sleeve shirt", "color": "sky blue", "fabric": "cotton", "fit": "regular" },
+        { "item": "jogger pants", "color": "olive green", "fabric": "cotton", "fit": "loose" }
+      ],
+      "position": "far_right",
+      "pose": "seated cross-legged on large lime green floor cushion, leaning slightly forward over notebook, pencil in hand",
+      "expression": "neutral"
+    }
+  ],
+
+  "scene": {
+    "location": "A modern open-plan elementary school learning environment with three clearly distinct spatial zones. LEFT HIGH-ENERGY ZONE: tall standing-height collaborative tables with BRIGHT YELLOW laminate tops on white metal frames, surrounded by LIME GREEN upholstered tall stools and TEAL hexagonal ottomans on casters; a full whiteboard wall covered in colorful student sketches and diagrams. CENTER TRANSITION ZONE: open polished concrete floor corridor with COBALT BLUE lightweight mobile chairs on casters mid-movement; a small YELLOW accent table on wheels. RIGHT LOW-ENERGY ZONE: large TEAL upholstered soft lounge chairs, LIME GREEN floor cushions, a low open wood bookshelf filled with colorful books, warm pendant lighting overhead. Room features: polished concrete floors that reflect color, white walls with bold multi-colored horizontal stripe accent bands (teal, yellow, orange, purple), large windows with natural light pouring in, recessed LED ceiling lights. The overall palette is bold and vibrant — teal, lime green, cobalt blue, yellow — not grey, not beige, not neutral.",
+    "time": "high_noon",
+    "weather": "clear_skies",
+    "lighting": {
+      "type": "natural_sunlight",
+      "direction": "side_lit"
+    },
+    "background_elements": [
+      "bold multi-colored horizontal stripe accent wall in teal, yellow, orange, and purple",
+      "floor-to-ceiling windows with bright natural light",
+      "low open bookshelves with colorful books on the right",
+      "whiteboard wall with colorful student diagrams on the far left",
+      "lime green and cobalt blue hexagonal ottomans clustered near left zone",
+      "yellow accent table on casters in transition zone",
+      "polished reflective concrete floor",
+      "colorful pendant light fixtures overhead"
+    ]
+  },
+
+  "technical": {
+    "camera_model": "Canon EOS R5",
+    "lens": "24mm",
+    "aperture": "f/5.6",
+    "shutter_speed": "1/250",
+    "iso": "100",
+    "film_stock": "Fujifilm Velvia 50"
+  },
+
+  "composition": {
+    "framing": "wide_shot",
+    "angle": "high_angle",
+    "focus_point": "whole_scene"
+  },
+
+  "style_modifiers": {
+    "medium": "photography",
+    "aesthetic": ["minimalist"]
+  },
+
+  "advanced": {
+    "negative_prompt": [
+      "grey metal furniture",
+      "beige furniture",
+      "neutral colored chairs",
+      "brown wood tones",
+      "traditional rows of desks",
+      "chalkboard",
+      "cluttered walls",
+      "dim lighting",
+      "muted colors",
+      "desaturated",
+      "washed out",
+      "grey stools",
+      "silver chairs",
+      "old school furniture",
+      "plastic stacking chairs",
+      "low quality",
+      "blur",
+      "distortion",
+      "watermark",
+      "bad hands",
+      "extra fingers",
+      "cropped",
+      "worst quality",
+      "cartoon",
+      "illustration"
+    ],
+    "magic_prompt_enhancer": true,
+    "hdr_mode": true
+  }
+}
