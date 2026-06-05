@@ -1,0 +1,239 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "rectangle",
+      "id": "aXZYQ",
+      "x": 0,
+      "y": -498,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "kay-twelve-logo.png",
+        "mode": "fill"
+      },
+      "width": 1000,
+      "height": 260
+    },
+    {
+      "type": "rectangle",
+      "id": "wZkYz",
+      "x": 1054,
+      "y": -647,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "radically-student-centered-1.png",
+        "mode": "fill"
+      },
+      "width": 500,
+      "height": 500
+    },
+    {
+      "type": "frame",
+      "id": "nNZYS",
+      "x": 0,
+      "y": 50,
+      "name": "16:9 Widescreen",
+      "clip": true,
+      "width": 1920,
+      "height": 1080,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "Generated%20Image%20May%2014%2C%202026%20-%209_45AM.jpg",
+        "mode": "fill"
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "ronEJ",
+          "x": -40,
+          "y": -40,
+          "name": "bg16",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "Generated%20Image%20May%2014%2C%202026%20-%209_45AM.jpg",
+            "mode": "fill"
+          },
+          "width": 2000,
+          "height": 1160
+        },
+        {
+          "type": "ellipse",
+          "id": "RezkE",
+          "x": -151,
+          "y": 628,
+          "opacity": 0.5,
+          "fill": "#FFFFFF",
+          "width": 722,
+          "height": 722
+        },
+        {
+          "type": "rectangle",
+          "id": "BV6aL",
+          "x": 100,
+          "y": 750,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "radically-student-centered-1.png",
+            "mode": "fill"
+          },
+          "width": 262,
+          "height": 262
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "dBuPv",
+      "x": 2100,
+      "y": 50,
+      "name": "1:1 Square",
+      "clip": true,
+      "width": 1080,
+      "height": 1080,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "Generated%20Image%20May%2014%2C%202026%20-%209_46AM.jpg",
+        "mode": "fill"
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "LCdCK",
+          "x": -40,
+          "y": -40,
+          "name": "bgRect",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "Generated%20Image%20May%2014%2C%202026%20-%209_46AM.jpg",
+            "mode": "fill"
+          },
+          "width": 1160,
+          "height": 1160
+        },
+        {
+          "type": "ellipse",
+          "id": "o8uFh",
+          "x": -85,
+          "y": 826,
+          "name": "ellipse",
+          "opacity": 0.5,
+          "fill": "#FFFFFF",
+          "width": 406,
+          "height": 406
+        },
+        {
+          "type": "rectangle",
+          "id": "PFwyf",
+          "x": 57,
+          "y": 901,
+          "name": "imgRect",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "radically-student-centered-1.png",
+            "mode": "fill"
+          },
+          "width": 147,
+          "height": 147
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BBBRI",
+      "x": 3300,
+      "y": 50,
+      "name": "4:5 Portrait",
+      "clip": true,
+      "width": 1080,
+      "height": 1350,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "Generated%20Image%20May%2014%2C%202026%20-%209_46AM.jpg",
+        "mode": "fill"
+      },
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "id": "u2F2n",
+          "x": -40,
+          "y": -40,
+          "name": "bg45",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "Generated%20Image%20May%2014%2C%202026%20-%209_46AM.jpg",
+            "mode": "fill"
+          },
+          "width": 1160,
+          "height": 1430
+        },
+        {
+          "type": "ellipse",
+          "id": "n6Hk3P",
+          "x": -85,
+          "y": 1096,
+          "name": "ell",
+          "opacity": 0.5,
+          "fill": "#FFFFFF",
+          "width": 406,
+          "height": 406
+        },
+        {
+          "type": "rectangle",
+          "id": "cVE6w",
+          "x": 54,
+          "y": 1175,
+          "name": "logo",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "radically-student-centered-1.png",
+            "mode": "fill"
+          },
+          "width": 147,
+          "height": 147
+        }
+      ]
+    },
+    {
+      "type": "rectangle",
+      "id": "hoIPL",
+      "x": 2328,
+      "y": -1316,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "Generated%20Image%20May%2014%2C%202026%20-%209_46AM.jpg",
+        "mode": "fill"
+      },
+      "width": 1024,
+      "height": 1024
+    }
+  ],
+  "variables": {
+    "white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "yellow": {
+      "type": "color",
+      "value": "#ffb41f"
+    },
+    "dark": {
+      "type": "color",
+      "value": "#1a1a1a"
+    }
+  }
+}
